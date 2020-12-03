@@ -1,0 +1,602 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+    <meta charset="utf-8"/>
+    <title>Название страницы</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: "Post No Bills Jaffna";
+            src: url("./fonts/postnobillscolombo-bold.ttf") format("truetype");
+            font-weight: bold;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: "Post No Bills Jaffna", sans-serif;
+            color: #ffffff;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1170px;
+            padding: 0 15px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            background-color: #000000;
+            height: 44px;
+        }
+
+        .header-container {
+            padding: 14px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .header-container__inform {
+            font-family: sans-serif;
+            position: relative;
+            font-size: 12px;
+            line-height: 16px;
+            color: #969696;
+        }
+
+        .header-container__icon {
+            font-size: 14px;
+            position: absolute;
+            top: 0;
+            left: -20px;
+        }
+
+        .header-container__link {
+            color: #969696;
+            transition: .3s linear;
+        }
+
+        .header-container__link:hover {
+            color: #ffffff;
+        }
+
+        /* Nav */
+        nav {
+            height: 80px;
+            background-color: #0F0F0F;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .nav-logo {
+            padding: 13px 0;
+        }
+
+        .nav-logo__text {
+            font-size: 36px;
+        }
+
+        .nav-list__item {
+            display: inline-block;
+            padding: 31px 0;
+        }
+
+        .nav-list__link {
+            padding: 31px 20px;
+            color: #969696;
+            transition: .2s linear;
+        }
+
+        .nav-list__link:hover {
+            color: #ffffff;
+            background-color: #1F1F1F;
+        }
+
+        .nav-search {
+            display: flex;
+            justify-content: right;
+        }
+
+        .nav-options {
+            padding: 29px 0;
+        }
+
+        .nav-options__button {
+            border: none;
+            cursor: pointer;
+            background-color: transparent;
+        }
+
+        .nav-options__button:hover .nav-options__icon {
+            color: #ffffff;
+        }
+
+        .nav-options__icon {
+            transition: .2s linear;
+            color: #c6c6c6;
+            font-size: 16.5px;
+            padding: 0 20px;
+        }
+
+        /* firstScreen */
+        .firstScreen-section {
+            height: 810px;
+            background: linear-gradient(0deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)), url("./img/firstScreen.jfif"), no-repeat, fixed, center;
+            background-size: cover;
+            position: relative;
+        }
+
+        .firstScreen-container {
+            position: absolute;
+            top: 160px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .firstScreen-logo {
+            width: 320px;
+            height: 320px;
+            margin: 0 auto;
+            border: 4px solid #ffffff;
+            border-radius: 2px;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .firstScreen-logo__text-small {
+            line-height: 48px;
+            font-size: 21px;
+            font-family: sans-serif;
+            font-weight: 400;
+        }
+
+        .firstScreen-logo__text {
+            margin: 30% auto 0;
+            width: 200px;
+            font-size: 64px;
+            line-height: 72px;
+            position: relative;
+            letter-spacing: 3px;
+        }
+
+        .firstScreen-logo__text::after {
+            content: "";
+            width: 100%;
+            height: 2px;
+            background-color: white;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        .firstScreen-description {
+            width: 730px;
+            text-align: center;
+            padding-top: 80px;
+        }
+
+        .firstScreen-description__text {
+            color: #ffffff;
+            font-family: 'PT Sans', sans-serif;
+            font-size: 16px;
+            Line-height: 24px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: .2px;
+        }
+
+        .firstSection-container {
+            display: flex;
+        }
+
+        /* firstSection */
+        .season-part {
+            width: 54.2%;
+            height: 730px;
+            background-color: #000000;
+        }
+
+        .newCollection-part {
+            width: 45.8%;
+            height: 730px;
+            background: linear-gradient(0deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)), url("./img/newSeason.jfif"), #000000;
+            position: relative;
+        }
+
+        .newCollection-content {
+            position: absolute;
+            bottom: 150px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .newCollection-title {
+            font-family: Playfair Display, sans-serif;
+            font-weight: 700;
+            font-size: 36px;
+            position: relative;
+            text-align: center;
+            line-height: 92px;
+        }
+
+        .season-title {
+            padding-top: 60px;
+            font-family: Playfair Display, sans-serif;
+            font-weight: 700;
+            font-size: 36px;
+            position: relative;
+            text-align: center;
+            line-height: 92px;
+        }
+        .ourBrands-content__title::after,
+        .newArrivals-content__title::after,
+        .collection-content__title::after,
+        .season-title::after,
+        .newCollection-title::after {
+            content: "";
+            width: 120px;
+            height: 2px;
+            background-color: #ffffff;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .newCollection-link {
+            font-family: 'PT Sans', sans-serif;
+            font-size: 18px;
+            letter-spacing: 1px;
+            color: #ffffff;
+            background-color: transparent;
+            border: 1px solid #ffffff;
+            padding: 12px 36px;
+            position: absolute;
+            left: 50%;
+            bottom: -75px;
+            transform: translateX(-50%);
+            transition: .3s linear;
+        }
+
+        .newCollection-link:hover {
+            background-color: #1F1F1F;
+        }
+
+        .season-content {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .season-item__img {
+            width: 215px;
+            height: 215px;
+            background-color: #191B1C;
+            padding: 55px 22px;
+        }
+
+        .season-item__title {
+            font-family: "Playfair Display", sans-serif;
+            font-size: 18px;
+            line-height: 24px;
+            padding: 10px 0;
+        }
+
+        .season-item__text {
+            color: #ffffff;
+            font-family: Playfair Display, sans-serif;
+            font-weight: 700;
+        }
+
+        .secondSection-container {
+            display: flex;
+        }
+
+        .collection-image {
+            width: 45.8%;
+            height: 600px;
+            background: linear-gradient(0deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)), url("./img/man.jfif"), #000000;
+            background-size: cover;
+
+        }
+
+        .collection-inform {
+            width: 54.2%;
+            height: 600px;
+            background-color: #000000;
+            position: relative;
+        }
+
+        .collection-content {
+            position: absolute;
+            left: 50%;
+            top: 40%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .collection-content__title {
+            padding-top: 60px;
+            font-family: Playfair Display, sans-serif;
+            font-weight: 700;
+            font-size: 36px;
+            position: relative;
+            text-align: center;
+            line-height: 92px;
+        }
+
+        .collection-content__text {
+            padding-top: 25px;
+            font-family: 'PT Sans', sans-serif;
+            line-height: 21px;
+        }
+
+        .collection-content__link {
+            margin-top: 50px;
+            color: #ffffff;
+            background-color: transparent;
+            padding: 8px 24px;
+            border: 1px solid #ffffff;
+            width: 220px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: .3s linear;
+        }
+
+        .collection-content__link:hover {
+            background-color: #1F1F1F;
+        }
+
+        .newArrivals {
+            height: 1289px;
+            background-color: #000000;
+        }
+
+        .newArrivals-content__title {
+            padding-top: 60px;
+            font-family: Playfair Display, sans-serif;
+            font-weight: 700;
+            font-size: 36px;
+            position: relative;
+            text-align: center;
+            line-height: 92px;
+        }
+
+        .NewArrivals-list {
+            padding-top: 80px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .newArrivals-item {
+            height: 450px;
+        }
+
+        .newArrivals-item__img {
+            width: 215px;
+            height: 215px;
+            background-color: #191B1C;
+            padding: 55px 22px;
+        }
+
+        .newArrivals-item__title {
+            font-family: "Playfair Display", sans-serif;
+            font-size: 18px;
+            line-height: 24px;
+            padding: 10px 0;
+        }
+
+        .newArrivals-item__text {
+            color: #ffffff;
+            font-family: Playfair Display, sans-serif;
+            font-weight: 700;
+        }
+
+        .ourBrands {
+            background-color: #0F0F0F;
+            height: 362px;
+        }
+
+        .ourBrands-content__title{
+            padding-top: 60px;
+            font-family: Playfair Display, sans-serif;
+            font-weight: 700;
+            font-size: 36px;
+            position: relative;
+            text-align: center;
+            line-height: 92px;
+        }
+
+        .ourBrands-list{
+            padding-top: 50px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .ourBrands-image{
+            width: 255px;
+            height: 94px;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <div class="container header-container">
+        <div class="header-container__inform">
+            <span><span class="iconify header-container__icon" data-icon="eva:phone-outline" data-inline="false"></span></span>
+            <span><a class="header-container__link" href="tel:88121234567">8 (812) 123-45-67</a> | Работаем 7 дней в неделю | 9:00 — 18:00</span>
+        </div>
+        <div class="header-container__inform">
+            <span class="iconify header-container__icon" data-icon="ic-sharp-log-in" data-inline="false"></span>
+            <span><a class="header-container__link" href="#">Войти</a> / <a class="header-container__link" href="#">Регистрация</a></span>
+        </div>
+    </div>
+</header>
+<nav>
+    <div class="container nav-container">
+        <div class="nav-logo">
+            <h1 class="nav-logo__text">
+                PORTEN
+            </h1>
+        </div>
+        <div class="nav-search">
+            <ul class="nav-list">
+                <li class="nav-list__item"><a class="nav-list__link" href="#">ПОНРАВИЛОСЬ</a></li>
+                <li class="nav-list__item"><a class="nav-list__link" href="#">ЛИЧНЫЙ КАБИНЕТ</a></li>
+                <li class="nav-list__item"><a class="nav-list__link" href="#">НАСТРОЙКИ</a></li>
+            </ul>
+            <div class="nav-options">
+                <button class="nav-options__button"><span class="iconify nav-options__icon" data-icon="bx:bx-cart"
+                                                          data-inline="false"></span></button>
+                <button class="nav-options__button"><span class="iconify nav-options__icon" data-icon="gridicons:search"
+                                                          data-inline="false"></span></button>
+            </div>
+        </div>
+    </div>
+</nav>
+<section class="firstScreen-section">
+    <div class="container firstScreen-container">
+        <div class="firstScreen-logo">
+            <h2 class="firstScreen-logo__text">PORTEN</h2>
+            <h3 class="firstScreen-logo__text-small">САНКТ-ПЕТЕРБУРГ</h3>
+        </div>
+        <div class="firstScreen-description">
+            <p class="firstScreen-description__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus interdum purus, est tortor pulvinar ut
+                in.
+                Fringilla a diam enim sed justo, sed iaculis sagittis. Tortor id eu interdum nec ut iaculis. Penatibus
+                ullamcorper ultricies morbi ipsum sem metus pharetra, mi. Tortor nibh magna feugiat id nunc, dui nisl
+                viverra.
+            </p>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="firstSection-container">
+        <div class="season-part">
+            <h2 class="season-title">СЕЗОН 2020/21</h2>
+            <div class="season-content">
+                <div class="season-item">
+                    <img alt="clock" class="season-item__img" src="./img/clock.png">
+                    <h6 class="season-item__title">Louis XVI ATHOS</h6>
+                    <p class="season-item__text">165 000 руб</p>
+                </div>
+                <div class="season-item">
+                    <img alt="clock" class="season-item__img" src="./img/clock.png">
+                    <h6 class="season-item__title">Louis XVI ATHOS</h6>
+                    <p class="season-item__text">165 000 руб</p>
+                </div>
+                <div class="season-item">
+                    <img alt="clock" class="season-item__img" src="./img/clock.png">
+                    <h6 class="season-item__title">Louis XVI ATHOS</h6>
+                    <p class="season-item__text">165 000 руб</p>
+                </div>
+            </div>
+        </div>
+        <div class="newCollection-part">
+            <div class="newCollection-content">
+                <h2 class="newCollection-title">НОВАЯ КОЛЛЕКЦИЯ</h2>
+                <a href="#" class="newCollection-link">КАТАЛОГ</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="secondSection-container">
+        <div class="collection-image">
+        </div>
+        <div class="collection-inform">
+            <div class="collection-content">
+                <h2 class="collection-content__title">КОЛЛЕКЦИЯ 2018</h2>
+                <p class="collection-content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non rutrum
+                    ornare ut mattis habitant dui
+                    arcu. Sagittis amet nunc ut neque quis nibh arcu. Vivamus vestibulum nisi et venenatis sed
+                    scelerisque magna consectetur. Amet convallis quis gravida facilisis vulputate. Faucibus facilisi
+                    habitasse ipsum interdum dictum aliquet. Velit quis ullamcorper pulvinar nulla malesuada integer.
+                    Aenean praesent viverra nulla nullam natoque volutpat curabitur auctor. Viverra viverra ullamcorper
+                    scelerisque risus dignissim egestas. Id aliquam a aliquam egestas leo orci pharetra sed diam. </p>
+                <a class="collection-content__link" href="#">ПОСМОТРЕТЬ КОЛЛЕКЦИЮ</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="newArrivals">
+    <div class="container">
+        <div class="newArrivals-content">
+            <h2 class="newArrivals-content__title">НОВЫЕ ПОСТУПЛЕНИЯ</h2>
+        </div>
+        <div class="NewArrivals-list">
+            <div class="newArrivals-item">
+                <img alt="clock" class="newArrivals-item__img" src="./img/clock.png">
+                <h6 class="newArrivals-item__title">Louis XVI ATHOS</h6>
+                <p class="newArrivals-item__text">165 000 руб</p>
+            </div>
+            <div class="newArrivals-item">
+                <img alt="clock" class="newArrivals-item__img" src="./img/clock.png">
+                <h6 class="newArrivals-item__title">Louis XVI ATHOS</h6>
+                <p class="newArrivals-item__text">165 000 руб</p>
+            </div>
+            <div class="newArrivals-item">
+                <img alt="clock" class="newArrivals-item__img" src="./img/clock.png">
+                <h6 class="newArrivals-item__title">Louis XVI ATHOS</h6>
+                <p class="newArrivals-item__text">165 000 руб</p>
+            </div>
+            <div class="newArrivals-item">
+                <img alt="clock" class="newArrivals-item__img" src="./img/clock.png">
+                <h6 class="newArrivals-item__title">Louis XVI ATHOS</h6>
+                <p class="newArrivals-item__text">165 000 руб</p>
+            </div>
+            <div class="newArrivals-item">
+                <img alt="clock" class="newArrivals-item__img" src="./img/clock.png">
+                <h6 class="newArrivals-item__title">Louis XVI ATHOS</h6>
+                <p class="newArrivals-item__text">165 000 руб</p>
+            </div>
+            <div class="newArrivals-item">
+                <img alt="clock" class="newArrivals-item__img" src="./img/clock.png">
+                <h6 class="newArrivals-item__title">Louis XVI ATHOS</h6>
+                <p class="newArrivals-item__text">165 000 руб</p>
+            </div>
+            <div class="newArrivals-item">
+                <img alt="clock" class="newArrivals-item__img" src="./img/clock.png">
+                <h6 class="newArrivals-item__title">Louis XVI ATHOS</h6>
+                <p class="newArrivals-item__text">165 000 руб</p>
+            </div>
+            <div class="newArrivals-item">
+                <img alt="clock" class="newArrivals-item__img" src="./img/clock.png">
+                <h6 class="newArrivals-item__title">Louis XVI ATHOS</h6>
+                <p class="newArrivals-item__text">165 000 руб</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="ourBrands">
+    <div class="container">
+        <div class="ourBrands-content">
+            <h2 class="ourBrands-content__title">НАШИ БРЕНДЫ</h2>
+        </div>
+        <div class="ourBrands-list">
+            <img class="ourBrands-image" src="./img/brand.png">
+            <img class="ourBrands-image" src="./img/brand.png">
+            <img class="ourBrands-image" src="./img/brand.png">
+            <img class="ourBrands-image" src="./img/brand.png">
+        </div>
+    </div>
+</section>
+<footer>
+    
+</footer>
+<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+</body>
+</html>
