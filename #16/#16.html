@@ -237,6 +237,7 @@
             text-align: center;
             line-height: 92px;
         }
+
         .ourBrands-content__title::after,
         .newArrivals-content__title::after,
         .collection-content__title::after,
@@ -274,6 +275,7 @@
         .season-content {
             display: flex;
             justify-content: space-evenly;
+            margin-top: 50px;
         }
 
         .season-item__img {
@@ -408,7 +410,7 @@
             height: 362px;
         }
 
-        .ourBrands-content__title{
+        .ourBrands-content__title {
             padding-top: 60px;
             font-family: Playfair Display, sans-serif;
             font-weight: 700;
@@ -418,16 +420,118 @@
             line-height: 92px;
         }
 
-        .ourBrands-list{
+        .ourBrands-list {
             padding-top: 50px;
             display: flex;
             justify-content: space-evenly;
         }
 
-        .ourBrands-image{
+        .ourBrands-image {
             width: 255px;
             height: 94px;
         }
+
+        footer {
+            background: linear-gradient(0deg, rgba(15, 15, 15, 0.85), rgba(15, 15, 15, 0.85)), url("./img/footer.jfif"), #C4C4C4;
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer-item {
+            width: 30%;
+            padding: 1.6%;
+        }
+
+        .footer-item__title{
+            font-family: "Playfair Display", sans-serif;
+            font-size: 18px;
+            line-height: 24px;
+            padding: 40px 0;
+        }
+        .footer-item__text{
+            font-family: 'PT Sans', sans-serif;
+            font-size: 14px;
+            color: #ffffff;
+        }
+
+        .footer-item__link{
+            color: #D0D0D0;
+            background-color: #0F0F0F;
+            padding: 10px 20px;
+            margin:  0 20px 20px 0;
+            transition: .3s linear;
+        }
+
+        .footer-item__link:hover{
+            color: #ffffff;
+            background-color: #000000;
+        }
+
+        .footer-item__link-wrapper{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .footer-item__input{
+            border: none;
+            border-radius: 1px;
+            padding: 10px 20px;
+            color: #ffffff;
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+
+        .footer-item__input::placeholder{
+            color: #ffffff;
+        }
+
+        .footer-item__button{
+            border: none;
+            color: #D0D0D0;
+            padding: 10px 10px;
+            margin-left: -5px;
+            background-color: #0F0F0F;
+            transition: .3s linear;
+        }
+
+        .footer-item__button:hover{
+            color: #ffffff;
+            background-color: #000000;
+        }
+
+        .footer-item__input-wrapper{
+            margin-top: 50px;
+        }
+
+        .copyright {
+            background: #0F0F0F;
+            height: 50px;
+        }
+
+        .copyright-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .copyright-title {
+            color: #D0D0D0;
+            padding: 16px 0;
+        }
+
+        .copyright-link {
+            color: #D0D0D0;
+            transition: .3s linear;
+        }
+
+        .copyright-link:hover {
+            color: #ffffff;
+        }
+
 
     </style>
 </head>
@@ -587,16 +691,66 @@
             <h2 class="ourBrands-content__title">НАШИ БРЕНДЫ</h2>
         </div>
         <div class="ourBrands-list">
-            <img class="ourBrands-image" src="./img/brand.png">
-            <img class="ourBrands-image" src="./img/brand.png">
-            <img class="ourBrands-image" src="./img/brand.png">
-            <img class="ourBrands-image" src="./img/brand.png">
+            <img alt="brand" class="ourBrands-image" src="./img/brand.png">
+            <img alt="brand" class="ourBrands-image" src="./img/brand.png">
+            <img alt="brand" class="ourBrands-image" src="./img/brand.png">
+            <img alt="brand" class="ourBrands-image" src="./img/brand.png">
         </div>
     </div>
 </section>
 <footer>
-    
+    <div class="container footer-container">
+        <div class="footer-item">
+            <h2 class="footer-item__title">О МАГАЗИНЕ</h2>
+            <p class="footer-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi semper viverra nunc
+                cursus tortor lectus nunc
+                nulla nibh. Egestas amet consectetur vel vitae aliquam dictum suspendisse. Lobortis eget consequat,
+                tellus et et sed turpis. Pretium quisque vitae, amet, porttitor odio ultricies massa pharetra leo. Et
+                ipsum urna fames in sit mi ultrices nisi, nunc.</p>
+        </div>
+        <div class="footer-item">
+            <h2 class="footer-item__title">КАТЕГОРИИ</h2>
+            <div class="footer-item__link-wrapper">
+                <a class="footer-item__link" href="#">
+                    часы
+                </a>
+                <a class="footer-item__link" href="#">
+                    браслеты
+                </a>
+                <a class="footer-item__link" href="#">
+                    ремни
+                </a>
+                <a class="footer-item__link" href="#">
+                    ювелирные изделия
+                </a>
+                <a class="footer-item__link" href="#">
+                    запонки
+                </a>
+            </div>
+        </div>
+        <div class="footer-item">
+            <h2 class="footer-item__title">РАССЫЛКА</h2>
+            <p class="footer-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi semper viverra nunc
+                cursus tortor lectus nunc nulla nibh.</p>
+            <div class="footer-item__input-wrapper">
+                <label for="email"></label>
+                <input id="email" name="email" placeholder="Ваша почта" class="footer-item__input">
+                <button class="footer-item__button">ПОДПИСАТЬСЯ</button>
+            </div>
+        </div>
+    </div>
 </footer>
+<section class="copyright">
+    <div class="container copyright-container">
+        <span class="copyright-title">
+            © 2020 Все права защищены
+        </span>
+        <span class="copyright-title">
+            <a class="copyright-link"
+               href="https://www.figma.com/file/xHjAxd90oUnfpTQ5NZnSoz/Templates-%2317.-More-on-Figma.info?node-id=1%3A15">Сделано Figma.info</a>
+        </span>
+    </div>
+</section>
 <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 </body>
 </html>
