@@ -2,7 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="846de17f-820c-4f84-b89b-772a24765d2a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/#16/#16.html" beforeDir="false" afterPath="$PROJECT_DIR$/#16/#16.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#16/#16.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/#16/fonts/SIL Open Font License.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/#16/fonts/postnobillscolombo-bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/#16/fonts/postnobillscolombo-extrabold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/#16/fonts/postnobillscolombo-light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/#16/fonts/postnobillscolombo-medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/#16/fonts/postnobillscolombo-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/#16/fonts/postnobillscolombo-semibold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/#16/img/brand.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/#16/img/clock.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/#16/img/firstScreen.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/#16/img/footer.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/#16/img/man.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/#16/img/newSeason.jfif" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +53,7 @@
       <workItem from="1606946401235" duration="852000" />
       <workItem from="1607007661237" duration="16510000" />
       <workItem from="1607072678413" duration="4600000" />
+      <workItem from="1607353958208" duration="1899000" />
     </task>
     <servers />
   </component>
