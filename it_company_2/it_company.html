@@ -99,6 +99,11 @@
             padding: 15px 35px;
             border-radius: 50px;
             background-color: #4985FF;
+            transition: .3s linear;
+        }
+
+        .hero-content__link:hover {
+            background-color: #0d49d0;
         }
 
         .services {
@@ -238,7 +243,7 @@
 
         .statistic-numbers {
             padding: 70px 0;
-            min-height: 200px;
+            min-height: 60px;
             display: flex;
             justify-content: space-evenly;
             position: relative;
@@ -271,6 +276,234 @@
             font-weight: 500;
             font-size: 16px;
             color: #999999;
+        }
+
+        .blue {
+            color: #0d49d0;
+        }
+
+        .prof-inform {
+            height: 500px;
+            background: linear-gradient(90deg, #504DC2 20.44%, #5F12D0 80.91%), #C4C4C4;
+        }
+
+        .prof-inform__container {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 100px;
+        }
+
+        .prof-inform__title {
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 53px;
+            color: #ffffff;
+            max-width: 540px;
+        }
+
+        .prof-inform__link-wrapper {
+            padding-top: 20px;
+        }
+
+        .prof-content {
+            min-height: 500px;
+        }
+
+        .prof-content__container {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        .prof-content__container::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            bottom: 0;
+            opacity: .5;
+            background-color: #A1A1A1;
+            transform: translateY(-100px);
+        }
+
+        .prof-content__item {
+            position: relative;
+            transform: translateY(-200px);
+            width: 350px;
+            transition: .2s linear;
+        }
+
+        .prof-content__item:hover {
+            transform: translateY(-210px);
+        }
+
+        .prof-content__img {
+            background-image: url("./img/works.jfif");
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 10px;
+            width: 350px;
+            height: 300px;
+        }
+
+        .prof-content__title {
+            padding: 30px 0;
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        .prof-content__text {
+            font-size: 16px;
+            line-height: 25px;
+            color: #999999;
+            padding: 0 0 30px 0;
+        }
+
+        .prof-content__link {
+            padding: 10px 2px;
+        }
+
+        .projects {
+            min-height: 800px;
+            background-color: #F6F6F8;
+            text-align: center;
+        }
+
+        .projects-content {
+            display: flex;
+            justify-content: space-between;
+            padding: 70px 0 50px;
+        }
+
+        .projects-content__item {
+            width: 255px;
+            height: 255px;
+            margin: 0 15px;
+            border-radius: 10px;
+            background-image: url("./img/projects.jfif");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: 1s ease;
+        }
+
+        .projects-content__item:hover {
+            transform: scale(1.05);
+        }
+
+        .projects-title {
+            max-width: 730px;
+            margin: 0 auto;
+            padding: 100px 0 50px;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 53px;
+        }
+
+        .projects-text {
+            max-width: 730px;
+            margin: 0 auto;
+            font-size: 16px;
+            line-height: 25px;
+            color: #999999;
+        }
+
+        .projects-link__wrapper {
+            padding: 15px 0 130px;
+        }
+
+        .work-inform {
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), url("./img/hero.jfif");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 570px;
+            position: relative;
+        }
+
+        .work-video {
+            position: relative;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 50%);
+            background-image: url("./img/video.jfif");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            box-shadow: 0 0 10px rgba(111, 111, 111, 0.25);
+            border-radius: 10px;
+            width: 970px;
+            height: 430px;
+        }
+
+        .work-video::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background-color: #E0E0E0;
+            bottom: -85px;
+        }
+
+        .work-content {
+            min-height: 500px;
+            text-align: center;
+        }
+
+        .work-content__container {
+            padding-top: 250px;
+        }
+
+        .work-content__title {
+            font-weight: 600;
+            font-size: 18px;
+            padding-bottom: 20px;
+        }
+
+        .work-content__text {
+            font-size: 16px;
+            color: #999999;
+        }
+
+        .work-content__form{
+            padding-top: 30px;
+        }
+
+        .work-content__note {
+            font-size: 13px;
+            color: #999999;
+            padding: 35px 0 85px;
+        }
+
+        .work-content__input {
+            border: none;
+            box-shadow: 0 0 10px rgba(111, 111, 111, 0.25);
+            border-bottom-left-radius: 30px;
+            border-top-left-radius: 30px;
+            padding: 15px 33px;
+            transition: .3s linear;
+            width: 220px;
+        }
+
+        .work-content__input:focus {
+            outline: none;
+            box-shadow: 0 0 10px rgba(111, 111, 111, .6);
+        }
+
+        .work-content__submit {
+            border: none;
+            box-shadow: 0 0 10px rgba(111, 111, 111, 0.25);
+            border-bottom-right-radius: 30px;
+            border-top-right-radius: 30px;
+            padding: 15px 33px;
+            color: #ffffff;
+            background-color: #4985FF;
+            transition: .3s linear;
+            margin-left: -5px;
+        }
+
+        .work-content__submit:hover {
+            background-color: #0d49d0;
         }
 
 
@@ -532,6 +765,90 @@
         </div>
     </div>
 </section>
+<section class="prof">
+    <div class="prof-inform">
+        <div class="container prof-inform__container">
+            <h2 class="prof-inform__title">Наши работы, на которых мы специализируемся</h2>
+            <div class="prof-inform__link-wrapper">
+                <a href="#" class="hero-content__link">Все услуги</a>
+            </div>
+        </div>
+    </div>
+    <div class="prof-content">
+        <div class="container prof-content__container">
+            <div class="prof-content__item">
+                <div class="prof-content__img"></div>
+                <h3 class="prof-content__title"><span class="blue">01.</span> Исследование и упаковка</h3>
+                <p class="prof-content__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                    вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+                <a href="#" class="statistic-inform__link prof-content__link">Подробнее</a>
+            </div>
+            <div class="prof-content__item">
+                <div class="prof-content__img"></div>
+                <h3 class="prof-content__title"><span class="blue">01.</span> Исследование и упаковка</h3>
+                <p class="prof-content__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                    вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+                <a href="#" class="statistic-inform__link prof-content__link">Подробнее</a>
+            </div>
+            <div class="prof-content__item">
+                <div class="prof-content__img"></div>
+                <h3 class="prof-content__title"><span class="blue">01.</span> Исследование и упаковка</h3>
+                <p class="prof-content__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                    вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+                <a href="#" class="statistic-inform__link prof-content__link">Подробнее</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="projects">
+    <div class="container">
+        <h2 class="projects-title">Наши проекты</h2>
+        <p class="projects-text">
+            Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной
+            "рыбой" для текстов на латинице с начала XVI века.
+        </p>
+        <div class="projects-content">
+            <a href="#">
+                <div class="projects-content__item"></div>
+            </a>
+            <a href="#">
+                <div class="projects-content__item"></div>
+            </a>
+            <a href="#">
+                <div class="projects-content__item"></div>
+            </a>
+            <a href="#">
+                <div class="projects-content__item"></div>
+            </a>
+        </div>
+        <div class="projects-link__wrapper">
+            <a class="hero-content__link" href="#">Все проекты</a>
+        </div>
+    </div>
+</section>
+<section class="work">
+    <div class="work-inform">
+        <div class="container">
+            <h2></h2>
+            <p></p>
+            <div class="work-video"></div>
+        </div>
+    </div>
+    <div class="work-content">
+        <div class="container work-content__container">
+            <h3 class="work-content__title">Подпишитесь на нашу рассылку</h3>
+            <label for="email" class="work-content__text">Полезные статьи, акции, новости - получите все это сейчас!</label>
+            <form class="work-content__form">
+                <input id="email" name="email" class="work-content__input" type="email" placeholder="Ваш E-mail">
+                <button class="work-content__submit">Подписаться</button>
+            </form>
+            <p class="work-content__note">Мы не шлем спам, и не передаем никому ваши данные.</p>
+        </div>
+    </div>
+</section>
+<footer>
+
+</footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="./js/spincrement.js"></script>
 </body>
