@@ -1,9 +1,9 @@
 'use strict';
 const multiItemSlider = (function () {
-    return function (selector) {
+    return function (selector, buttons, stepScale) {
         let
             _mainElement = document.querySelector(selector), // основный элемент блока
-            _ButtonsWrapper = document.querySelector(".slider__buttons"),
+            _ButtonsWrapper = document.querySelector(buttons),
             _sliderWrapper = _mainElement.querySelector('.slider__wrapper'), // обертка для .slider-item
             _sliderItems = _mainElement.querySelectorAll('.slider__item'), // элементы (.slider-item)
             _sliderControls = _ButtonsWrapper.querySelectorAll('.slider__control'), // элементы управления
@@ -13,9 +13,8 @@ const multiItemSlider = (function () {
             _itemWidth = parseFloat(getComputedStyle(_sliderItems[0]).width), // ширина одного элемента
             _positionLeftItem = 0, // позиция левого активного элемента
             _transform = 0, // значение трансформации .slider_wrapper
-            _step = _itemWidth / _wrapperWidth * 105, // величина шага (для трансформации)
+            _step = _itemWidth / _wrapperWidth * stepScale, // величина шага (для трансформации)
             _items = []; // массив элементов
-
         // наполнение массива _items
         _sliderItems.forEach(function (item, index) {
             _items.push({ item: item, position: index, transform: 0 });
@@ -85,6 +84,7 @@ const multiItemSlider = (function () {
         }
 
     }
-}('.slider'));
+}());
 
-var slider = multiItemSlider('.slider')
+const slider = multiItemSlider('.projects-slider', '.projects-slider__buttons', 105)
+const slider2 = multiItemSlider('.rent-slider', '.rent-slider__buttons', 100)
