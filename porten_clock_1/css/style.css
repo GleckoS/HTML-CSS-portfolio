@@ -116,10 +116,6 @@ header {
     padding: 0 20px;
 }
 
-.nav-search_alt{
-    display: none;
-}
-
 .hero-section {
     height: 810px;
     background: linear-gradient(0deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)), url("../img/firstScreen.jfif");
@@ -200,8 +196,9 @@ header {
 
 .newCollection-part {
     width: 45.8%;
-    height: 730px;
+    min-height: 730px;
     background: linear-gradient(0deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)), url("../img/newSeason.jfif"), #000000;
+    background-size: cover;
     position: relative;
 }
 
