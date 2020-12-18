@@ -20,12 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="846de17f-820c-4f84-b89b-772a24765d2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/it_company_2/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/porten_clock_1/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/porten_clock_1/css/media.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/porten_clock_1/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trans_light_3/css/media.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/it_company_2/it_company.html" beforeDir="false" afterPath="$PROJECT_DIR$/it_company_2/it_company.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/porten_clock_1/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/porten_clock_1/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/porten_clock_1/porten_clock.html" beforeDir="false" afterPath="$PROJECT_DIR$/porten_clock_1/porten_clock.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trans_light_3/css/slider.css" beforeDir="false" afterPath="$PROJECT_DIR$/trans_light_3/css/slider.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/trans_light_3/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/trans_light_3/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/trans_light_3/js/slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/trans_light_3/js/slider.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/trans_light_3/trans_light.html" beforeDir="false" afterPath="$PROJECT_DIR$/trans_light_3/trans_light.html" afterDir="false" />
@@ -80,6 +81,8 @@
       <workItem from="1607968923518" duration="5667000" />
       <workItem from="1607978883033" duration="3941000" />
       <workItem from="1608051135498" duration="8869000" />
+      <workItem from="1608287373362" duration="3181000" />
+      <workItem from="1608297486131" duration="8968000" />
     </task>
     <servers />
   </component>

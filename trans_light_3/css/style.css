@@ -521,7 +521,7 @@ header {
     color: #343434;
 }
 
-.news-item_small__text{
+.news-item_small__text {
     font-weight: 300;
     font-size: 14px;
     line-height: 19px;
@@ -529,14 +529,14 @@ header {
     padding: 20px 0;
 }
 
-.news-item_small__img-container{
+.news-item_small__img-container {
     display: flex;
     justify-content: space-between;
     position: absolute;
     bottom: 0;
 }
 
-.news-item_small__img{
+.news-item_small__img {
     width: 128px;
     height: 115px;
 }
@@ -553,5 +553,95 @@ header {
 
 
 footer {
-    padding-top: 150px;
+    margin-top: 150px;
+    min-height: 255px;
+    background-color: #005BC1;
+}
+
+.footer-inform {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-inform__number {
+    font-family: Oswald, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 36px 0 25px;
+}
+
+.footer-inform__address {
+    font-weight: 600;
+    color: #FFFFFF;
+    padding: 40px 0 29px;
+}
+
+.footer-inform__email {
+    font-weight: 600;
+    color: #FFFFFF;
+    padding: 40px 0 29px;
+}
+
+.footer-nav {
+    padding: 10px 0;
+    position: relative;
+}
+
+.footer-nav::after,
+.footer-nav::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff;
+}
+
+.footer-nav::before {
+    top: 0;
+}
+
+.footer-nav::after {
+    bottom: 0;
+}
+
+.footer-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    list-style: none;
+    text-align: left;
+}
+
+.footer-nav__list-item {
+    width: 200px;
+    padding: 10px 0;
+}
+
+.footer-nav__list-link {
+    color: #ffffff;
+    padding: 10px 0;
+    font-weight: 300;
+    font-size: 14px;
+    transition: .2s linear;
+}
+
+.footer-nav__list-link:hover {
+    color: #C4C4C4;
+}
+
+.footer-nav__list-link:active {
+    color: #000000;
+}
+
+.footer-copyright {
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-copyright__text {
+    font-weight: 300;
+    color: #FFFFFF;
 }

@@ -27,7 +27,7 @@ header {
 }
 
 .header-container {
-    padding: 14px 0;
+    padding: 14px 15px 14px 30px;
     display: flex;
     justify-content: space-between;
 }
@@ -56,7 +56,7 @@ header {
     color: #ffffff;
 }
 
-nav {
+.nav {
     height: 80px;
     background-color: #0F0F0F;
 }
@@ -116,21 +116,27 @@ nav {
     padding: 0 20px;
 }
 
-.firstScreen-section {
+.nav-search_alt{
+    display: none;
+}
+
+.hero-section {
     height: 810px;
-    background: linear-gradient(0deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)), url("../img/firstScreen.jfif"), no-repeat, fixed, center;
+    background: linear-gradient(0deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)), url("../img/firstScreen.jfif");
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
 
-.firstScreen-container {
+.hero-container {
     position: absolute;
     top: 160px;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.firstScreen-logo {
+.hero-logo {
     width: 320px;
     height: 320px;
     margin: 0 auto;
@@ -140,14 +146,14 @@ nav {
     color: #ffffff;
 }
 
-.firstScreen-logo__text-small {
+.hero-logo__text-small {
     line-height: 48px;
     font-size: 21px;
     font-family: sans-serif;
     font-weight: 400;
 }
 
-.firstScreen-logo__text {
+.hero-logo__text {
     margin: 30% auto 0;
     width: 200px;
     font-size: 64px;
@@ -156,7 +162,7 @@ nav {
     letter-spacing: 3px;
 }
 
-.firstScreen-logo__text::after {
+.hero-logo__text::after {
     content: "";
     width: 100%;
     height: 2px;
@@ -166,13 +172,13 @@ nav {
     left: 0;
 }
 
-.firstScreen-description {
+.hero-description {
     width: 730px;
     text-align: center;
     padding-top: 80px;
 }
 
-.firstScreen-description__text {
+.hero-description__text {
     color: #ffffff;
     font-family: 'PT Sans', sans-serif;
     font-size: 16px;
@@ -188,7 +194,7 @@ nav {
 
 .season-part {
     width: 54.2%;
-    height: 730px;
+    min-height: 730px;
     background-color: #000000;
 }
 
@@ -262,7 +268,12 @@ nav {
 .season-content {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 50px;
+    margin: 50px 0;
+    flex-wrap: wrap;
+}
+
+.season-item{
+    margin: 20px 0;
 }
 
 .season-item__img {
@@ -291,15 +302,17 @@ nav {
 
 .collection-image {
     width: 45.8%;
-    height: 600px;
+    min-height: 600px;
     background: linear-gradient(0deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)), url("../img/man.jfif"), #000000;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
 
 }
 
 .collection-inform {
     width: 54.2%;
-    height: 600px;
+    min-height: 600px;
     background-color: #000000;
     position: relative;
 }
@@ -330,7 +343,7 @@ nav {
 }
 
 .collection-content__link {
-    margin-top: 50px;
+
     color: #ffffff;
     background-color: transparent;
     padding: 8px 24px;
@@ -342,12 +355,16 @@ nav {
     transition: .3s linear;
 }
 
+.collection-content__link-wrapper{
+    margin: 50px 0;
+}
+
 .collection-content__link:hover {
     background-color: #1F1F1F;
 }
 
 .newArrivals {
-    height: 1289px;
+    min-height: 1289px;
     background-color: #000000;
 }
 
@@ -364,12 +381,13 @@ nav {
 .NewArrivals-list {
     padding-top: 80px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
 .newArrivals-item {
     height: 450px;
+    margin: 0 10px;
 }
 
 .newArrivals-item__img {
@@ -394,7 +412,7 @@ nav {
 
 .ourBrands {
     background-color: #0F0F0F;
-    height: 362px;
+    min-height: 362px;
 }
 
 .ourBrands-content__title {
@@ -408,21 +426,23 @@ nav {
 }
 
 .ourBrands-list {
-    padding-top: 50px;
+    padding: 50px 0;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .ourBrands-image {
     width: 255px;
     height: 94px;
+    margin: 10px;
 }
 
 footer {
     background: linear-gradient(0deg, rgba(15, 15, 15, 0.85), rgba(15, 15, 15, 0.85)), url("../img/footer.jfif"), #C4C4C4;
     background-size: cover;
     background-position: center;
-    height: 400px;
+    min-height: 400px;
 }
 
 .footer-container {
@@ -498,7 +518,7 @@ footer {
 
 .copyright {
     background: #0F0F0F;
-    height: 50px;
+    min-height: 50px;
 }
 
 .copyright-container {

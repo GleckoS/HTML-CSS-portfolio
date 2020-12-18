@@ -1,0 +1,130 @@
+@media (max-width: 1440px) {
+    .firstSection-container{
+        flex-direction: column;
+    }
+
+    .secondSection-container{
+        flex-direction: column-reverse;
+    }
+
+    .collection-image,
+    .collection-inform,
+    .newCollection-part,
+    .season-part{
+        width: 100%;
+    }
+
+    .collection-image{
+        width: 100%;
+        height: 300px;
+    }
+
+}
+
+@media (max-width: 1125px){
+    .footer-item__button{
+        width: 209px;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 776px) {
+    .collection-content {
+        position: relative;
+        transform: translate(0, 0);
+        left: 0;
+        top: 0;
+        margin: 0 15px;
+    }
+
+    .collection-content__link {
+        position: relative;
+        transform: translate(0, 0);
+        left: 0;
+    }
+
+    .newCollection-content {
+        bottom: 200px;
+    }
+
+    .newCollection-title {
+        padding-bottom: 20px;
+        line-height: normal;
+    }
+
+    .hero-description {
+        width: 325px;
+        padding-top: 40px;
+    }
+
+    .nav-search {
+        display: none;
+    }
+
+    .nav-search_alt {
+        display: block;
+    }
+
+    .content {
+        opacity: 0;
+        transition: all .5s linear;
+        padding: 0;
+        height: 0;
+        overflow: hidden;
+    }
+
+    .content.active {
+        opacity: 1;
+        width: auto;
+        height: auto;
+        padding: 15px 0;
+        overflow: auto;
+    }
+
+    footer {
+        min-height: 0;
+    }
+
+    .footer-item__title {
+        padding: 20px 0;
+        background: rgba(0, 0, 0, .2);
+        margin-bottom: 0;
+        cursor: pointer;
+    }
+
+    .footer-item__link-wrapper {
+        justify-content: space-between;
+    }
+
+    .footer-item__link {
+        margin: 10px;
+    }
+
+    .footer-item {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+}
+
+/*TODO: починить верхнюю инфу, и hero*/
+
+@media (max-width: 360px){
+    .footer-item__link{
+        margin: 5px 0;
+    }
+
+    .ourBrands-content__title{
+        line-height: normal;
+        padding-bottom: 10px;
+    }
+
+    .hero-logo{
+        width: 100%;
+        padding: 0;
+    }
+}

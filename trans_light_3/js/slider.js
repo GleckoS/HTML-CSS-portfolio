@@ -86,5 +86,13 @@ const multiItemSlider = (function () {
     }
 }());
 
+    /* Баг с маржинами потом подправить */
+
+if (screen.width > 1070){
 const slider = multiItemSlider('.projects-slider', '.projects-slider__buttons', 105)
+}
+else {
+    const slider = multiItemSlider('.projects-slider', '.projects-slider__buttons', 100)
+}
+
 const slider2 = multiItemSlider('.rent-slider', '.rent-slider__buttons', 100)
