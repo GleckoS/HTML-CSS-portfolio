@@ -239,6 +239,7 @@ nav::after {
     min-height: 60px;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     position: relative;
 }
 
@@ -253,6 +254,7 @@ nav::after {
 
 .statistic-numbers__item {
     width: 110px;
+    margin: 20px 30px;
 }
 
 .statistic-numbers__item-inform {
@@ -304,8 +306,9 @@ nav::after {
 
 .prof-content__container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     position: relative;
+    flex-wrap: wrap;
 }
 
 .prof-content__container::after {
@@ -324,6 +327,7 @@ nav::after {
     transform: translateY(-200px);
     width: 350px;
     transition: .2s linear;
+    padding: 30px 20px;
 }
 
 .prof-content__item:hover {
@@ -364,14 +368,15 @@ nav::after {
 
 .projects-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 70px 0 50px;
+    flex-wrap: wrap;
 }
 
 .projects-content__item {
     width: 255px;
     height: 255px;
-    margin: 0 15px;
+    margin: 30px 15px;
     border-radius: 10px;
     background-image: url("../img/projects.jfif");
     background-size: cover;
@@ -433,17 +438,16 @@ nav::after {
 }
 
 .work-video {
-    position: relative;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 10%);
+    transform: translateY(10%);
+    margin: 0 auto;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/video.jfif");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     box-shadow: 0 0 10px rgba(111, 111, 111, 0.25);
     border-radius: 10px;
-    width: 970px;
+    max-width: 970px;
+    width: 100%;
     height: 430px;
 }
 
@@ -550,9 +554,10 @@ footer{
 
 .footer-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 70px 0;
     position: relative;
+    flex-wrap: wrap;
 }
 
 .footer-container::after{
@@ -564,8 +569,12 @@ footer{
     background-color: #E0E0E0;
 }
 
+.footer-nav__list{
+}
+
 .footer-nav__list-item{
     padding: 30px 0 0 15px;
+
     position: relative;
 }
 

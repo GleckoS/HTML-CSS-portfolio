@@ -21,7 +21,8 @@
     <div class="container header-container">
         <div class="header-container__inform">
             <span><span class="iconify header-container__icon" data-icon="eva:phone-outline" data-inline="false"></span></span>
-            <span><a class="header-container__link" href="tel:88121234567">8 (812) 123-45-67</a><span class="header-container__additional"> | Работаем 7 дней в неделю | </span>9:00 — 18:00</span>
+            <span><a class="header-container__link" href="tel:88121234567">8 (812) 123-45-67</a><span
+                    class="header-container__additional"> | Работаем 7 дней в неделю | </span>9:00 — 18:00</span>
         </div>
         <div class="header-container__inform">
             <span class="iconify header-container__icon" data-icon="ic-sharp-log-in" data-inline="false"></span>
@@ -37,16 +38,23 @@
             </h1>
         </div>
         <nav class="nav-search">
-            <ul class="nav-list">
-                <li class="nav-list__item"><a class="nav-list__link" href="#">ПОНРАВИЛОСЬ</a></li>
-                <li class="nav-list__item"><a class="nav-list__link" href="#">ЛИЧНЫЙ КАБИНЕТ</a></li>
-                <li class="nav-list__item"><a class="nav-list__link" href="#">НАСТРОЙКИ</a></li>
-            </ul>
-            <div class="nav-options">
-                <button class="nav-options__button"><span class="iconify nav-options__icon" data-icon="bx:bx-cart"
-                                                          data-inline="false"></span></button>
-                <button class="nav-options__button"><span class="iconify nav-options__icon" data-icon="gridicons:search"
-                                                          data-inline="false"></span></button>
+            <div id="nav-search__mobile" class="nav-search__mobile" onclick="mobileNav()">
+                <span class="nav-search__mobile-button"></span>
+            </div>
+            <div class="nav-search_list">
+                <ul id="nav-list" class="nav-list">
+                    <li class="nav-list__item"><a class="nav-list__link" href="#">ПОНРАВИЛОСЬ</a></li>
+                    <li class="nav-list__item"><a class="nav-list__link" href="#">ЛИЧНЫЙ КАБИНЕТ</a></li>
+                    <li class="nav-list__item"><a class="nav-list__link" href="#">НАСТРОЙКИ</a></li>
+                    <li class="nav-list__item"><a class="nav-list__link" href="#"><span
+                            class="iconify nav-options__icon"
+                            data-icon="bx:bx-cart"
+                            data-inline="false"></span></a></li>
+                    <li class="nav-list__item"><a class="nav-list__link" href="#"><span
+                            class="iconify nav-options__icon"
+                            data-icon="gridicons:search"
+                            data-inline="false"></span></a></li>
+                </ul>
             </div>
         </nav>
     </div>
@@ -196,7 +204,7 @@
         <!-- Проверить семантическую правильность -->
         <div class="footer-item">
             <h2 class="footer-item__title" onclick="openClose('0')">О МАГАЗИНЕ</h2>
-            <div class="content">
+            <div class="footer-content">
                 <p class="footer-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi semper viverra
                     nunc
                     cursus tortor lectus nunc
@@ -208,7 +216,7 @@
         </div>
         <div class="footer-item">
             <h2 class="footer-item__title" onclick="openClose('1')">КАТЕГОРИИ</h2>
-            <div class="footer-item__link-wrapper content">
+            <div class="footer-item__link-wrapper footer-content">
                 <a class="footer-item__link" href="#">
                     часы
                 </a>
@@ -228,7 +236,7 @@
         </div>
         <div class="footer-item">
             <h2 class="footer-item__title" onclick="openClose('2')">РАССЫЛКА</h2>
-            <div class="content">
+            <div class="footer-content">
                 <p id="footer-item__text" class="footer-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing
                     elit. Mi semper viverra nunc
                     cursus tortor lectus nunc nulla nibh.</p>

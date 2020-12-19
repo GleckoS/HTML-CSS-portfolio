@@ -1,0 +1,30 @@
+@media (max-width: 936px) {
+    .statistic-inform {
+        flex-direction: column;
+    }
+
+    .statistic-inform__content {
+        width: auto;
+
+    }
+
+    .statistic-inform__img {
+        width: calc(100% - 30px);
+        height: auto;
+        max-height: 500px;
+    }
+
+    .statistic-inform__img-wrapper {
+        margin: 40px auto 0;
+    }
+
+    .services-item {
+        display: block;
+    }
+
+    .services-item__inform {
+        margin: 30px auto;
+        text-align: center;
+        width: 225px;
+    }
+}

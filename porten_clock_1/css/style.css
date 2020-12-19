@@ -15,6 +15,10 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 .container {
     max-width: 1170px;
     padding: 0 15px;
@@ -83,6 +87,7 @@ header {
     padding: 31px 20px;
     color: #969696;
     transition: .2s linear;
+
 }
 
 .nav-list__link:hover {
@@ -93,10 +98,7 @@ header {
 .nav-search {
     display: flex;
     justify-content: right;
-}
-
-.nav-options {
-    padding: 29px 0;
+    position: relative;
 }
 
 .nav-options__button {
@@ -112,12 +114,67 @@ header {
 .nav-options__icon {
     transition: .2s linear;
     color: #c6c6c6;
-    font-size: 16.5px;
+    font-size: 16px;
     padding: 0 20px;
 }
 
+.nav-search_list{
+    z-index: 2;
+}
+
+.nav-search__mobile{
+    display: none;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav-search__mobile-button{
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #C4C4C4;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .1s linear;
+}
+
+.nav-search__mobile-button::after,
+.nav-search__mobile-button::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #C4C4C4;
+    transition: .2s linear;
+    transform-origin: center;
+}
+
+.nav-search__mobile-button::after{
+    transform: translateY(5px);
+}
+
+.nav-search__mobile-button::before{
+    transform: translateY(-5px);
+}
+
+.active .nav-search__mobile-button{
+    height: 0;
+}
+
+.active .nav-search__mobile-button::after{
+    transform: rotateZ(-45deg);
+}
+
+.active .nav-search__mobile-button::before{
+    transform: rotateZ(45deg);
+}
+
 .hero-section {
-    height: 810px;
+    min-height: 810px;
     background: linear-gradient(0deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)), url("../img/firstScreen.jfif");
     background-position: center;
     background-repeat: no-repeat;
