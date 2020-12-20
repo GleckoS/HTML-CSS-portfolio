@@ -20,11 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="846de17f-820c-4f84-b89b-772a24765d2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/trans_light_3/js/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/it_company_2/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/it_company_2/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/porten_clock_1/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/porten_clock_1/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/porten_clock_1/porten_clock.html" beforeDir="false" afterPath="$PROJECT_DIR$/porten_clock_1/porten_clock.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/trans_light_3/css/media.css" beforeDir="false" afterPath="$PROJECT_DIR$/trans_light_3/css/media.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/trans_light_3/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/trans_light_3/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/trans_light_3/trans_light.html" beforeDir="false" afterPath="$PROJECT_DIR$/trans_light_3/trans_light.html" afterDir="false" />
@@ -86,6 +82,8 @@
       <workItem from="1608390439775" duration="2902000" />
       <workItem from="1608397586438" duration="3773000" />
       <workItem from="1608460648311" duration="7942000" />
+      <workItem from="1608479987406" duration="2112000" />
+      <workItem from="1608492211491" duration="2287000" />
     </task>
     <servers />
   </component>

@@ -99,33 +99,123 @@
         width: 180px;
     }
 
-    .nav-search__mobile {
-        display: block;
+    .string-title {
+        padding-left: 110px;
     }
 
 }
 
+@media (max-width: 700px) {
+
+}
+
+@media (max-width: 640px) {
+    .rent-inform{
+        width: 100%;
+        min-height: 150px;
+        padding: 25px 0;
+    }
+
+    .rent-content {
+        padding: 0;
+    }
+
+    .rent-slider__item{
+        height: auto;
+        display: block;
+    }
+
+    .rent-slider__item-title{
+        padding-top: 30px;
+    }
+
+    .rent-button__left {
+        top: 0;
+        z-index: 3;
+    }
+
+    .rent-button__right {
+        top: 0;
+        z-index: 3;
+    }
+}
+
 @media (max-width: 552px) {
-    .hero-content {
-        max-width: 100%;
-        transition: opacity .3s linear;
-        opacity: 1;
-        background: rgba(0, 0, 0, .2)
-    }
+.catalog-content__item-content{
+    width: 100%;
+}
 
-    .hero-bg,
-    .nav-list {
-        transform: translateX(-100%);
-        transition: .3s linear;
-    }
+.projects-button__left{
+    width: 35px;
+    height: 35px;
+    right: 38px;
+}
 
-    .hero-bg.active,
-    .nav-list.active {
-        transform: translateX(0);
-    }
+.projects-button__right{
+    width: 35px;
+    height: 35px;
+    right: 0;
+}
 
-    .hero-content.active {
-        opacity: 0;
-    }
+.projects-slider{
+    margin-top: 40px;
+}
 
+.string-title{
+    padding-left: 0;
+    font-size: 23px;
+}
+
+.string-title::before{
+    bottom: 0;
+    height: 2px;
+    left: auto;
+    top: auto;
+}
+
+.string-title::after{
+    display: none;
+}
+
+
+.nav-search__mobile {
+    display: block;
+}
+
+.hero-content {
+    max-width: 100%;
+    transition: opacity .3s linear;
+    opacity: 1;
+    background: rgba(0, 0, 0, .2)
+}
+
+.hero-bg,
+.nav-list {
+    transform: translateX(-100%);
+    transition: .3s linear;
+}
+
+.hero-bg.active,
+.nav-list.active {
+    transform: translateX(0);
+}
+
+.hero-content.active {
+    opacity: 0;
+}
+
+.rent-title{
+    font-size: 21px;
+}
+
+}
+
+@media (max-width: 420px) {
+.hero-title {
+    font-size: 32px;
+}
+
+.hero-text{
+    padding: 20px 0 40px;
+}
 }
