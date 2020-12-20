@@ -16,43 +16,116 @@
         margin: 20px;
     }
 
-    .news-content{
+    .news-content {
         flex-direction: column;
     }
 
-    .news-item_big{
+    .news-item_big {
         margin: 0 auto;
     }
 
-    .news-item_small{
+    .news-item_small {
         width: 50%;
         padding-top: 20px;
     }
 
-    .news-item_small__wrapper{
+    .news-item_small__wrapper {
         margin: 0 auto;
     }
 
-    .news-item_small__img-container{
+    .news-item_small__img-container {
         position: relative;
         bottom: 0;
     }
 
-    .news-item_small__date{
+    .news-item_small__date {
         right: 0;
     }
 
-    .rent-content{
+    .rent-content {
         flex-direction: column;
     }
 
-    .rent-inform{
+    .rent-inform {
         margin: 0 auto;
         width: 640px;
         min-height: 200px;
     }
 
-    .rent-slider__wrapper{
+    .rent-slider__wrapper {
         margin: 0 auto;
     }
+}
+
+@media (max-width: 820px) {
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav-nav {
+        z-index: 2;
+        margin: 0;
+    }
+
+    .nav-list__item {
+        display: block;
+    }
+
+    .hero-content {
+        left: auto;
+        top: auto;
+        right: 0;
+        text-align: center;
+        transform: translate(0);
+        max-width: calc(100% - 180px);
+        background: rgba(0, 0, 0, .5);
+        height: 720px;
+    }
+
+    .hero-title {
+        padding: 90px 15px 0;
+        font-size: 42px;
+        line-height: normal;
+    }
+
+    .hero-text {
+        padding: 40px 0 60px;
+        margin: 0 auto;
+    }
+
+    .hero-bg {
+        left: 0;
+        transform: translateX(0);
+        width: 180px;
+    }
+
+    .nav-search__mobile {
+        display: block;
+    }
+
+}
+
+@media (max-width: 552px) {
+    .hero-content {
+        max-width: 100%;
+        transition: opacity .3s linear;
+        opacity: 1;
+        background: rgba(0, 0, 0, .2)
+    }
+
+    .hero-bg,
+    .nav-list {
+        transform: translateX(-100%);
+        transition: .3s linear;
+    }
+
+    .hero-bg.active,
+    .nav-list.active {
+        transform: translateX(0);
+    }
+
+    .hero-content.active {
+        opacity: 0;
+    }
+
 }

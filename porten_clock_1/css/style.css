@@ -78,6 +78,10 @@ header {
     font-size: 36px;
 }
 
+.nav-logo__link{
+    color: #FFFFFF;
+}
+
 .nav-list__item {
     display: inline-block;
     padding: 31px 0;

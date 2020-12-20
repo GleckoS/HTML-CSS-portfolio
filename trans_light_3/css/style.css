@@ -63,6 +63,60 @@ header {
     color: #000000;
 }
 
+.nav-search__mobile{
+    z-index: 10;
+    display: none;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -40px;
+    right: 0;
+    padding: 20px;
+    transform: translateY(50%);
+}
+
+.nav-search__mobile-button{
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #FFFFFF;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .1s linear;
+}
+
+.nav-search__mobile-button::after,
+.nav-search__mobile-button::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #FFFFFF;
+    transition: .2s linear;
+    transform-origin: center;
+}
+
+.nav-search__mobile-button::after{
+    transform: translateY(5px);
+}
+
+.nav-search__mobile-button::before{
+    transform: translateY(-5px);
+}
+
+.active .nav-search__mobile-button{
+    height: 0;
+}
+
+.active .nav-search__mobile-button::after{
+    transform: rotateZ(-45deg);
+}
+
+.active .nav-search__mobile-button::before{
+    transform: rotateZ(45deg);
+}
+
 .hero-bg {
     height: 720px;
     width: 444px;
@@ -77,6 +131,7 @@ header {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    z-index: 3;
 }
 
 .hero-title {
