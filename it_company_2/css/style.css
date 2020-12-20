@@ -66,6 +66,57 @@ nav::after {
     background-size: 100% 2px;
 }
 
+.nav-search__mobile{
+    display: none;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav-search__mobile-button{
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #C4C4C4;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .1s linear;
+}
+
+.nav-search__mobile-button::after,
+.nav-search__mobile-button::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #C4C4C4;
+    transition: .2s linear;
+    transform-origin: center;
+}
+
+.nav-search__mobile-button::after{
+    transform: translateY(5px);
+}
+
+.nav-search__mobile-button::before{
+    transform: translateY(-5px);
+}
+
+.active .nav-search__mobile-button{
+    height: 0;
+}
+
+.active .nav-search__mobile-button::after{
+    transform: rotateZ(-45deg);
+}
+
+.active .nav-search__mobile-button::before{
+    transform: rotateZ(45deg);
+}
+
 .hero-content {
     position: absolute;
     top: 50%;
@@ -73,6 +124,8 @@ nav::after {
     transform: translate(-50%, -50%);
     text-align: center;
     color: #ffffff;
+    transition: opacity .3s linear;
+    opacity: 1;
 }
 
 .hero-content__title {
@@ -108,7 +161,7 @@ nav::after {
     font-weight: bold;
     font-size: 36px;
     line-height: 53px;
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
     padding-top: 110px;
 }
@@ -116,7 +169,7 @@ nav::after {
 .services-text {
     font-size: 16px;
     line-height: 25px;
-    width: 730px;
+    max-width: 730px;
     margin: 0 auto;
     padding: 50px 0 70px;
     color: #999999;
@@ -339,7 +392,7 @@ nav::after {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px;
-    width: 350px;
+    max-width: 350px;
     height: 300px;
 }
 

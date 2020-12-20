@@ -20,15 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="846de17f-820c-4f84-b89b-772a24765d2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/it_company_2/css/media.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/it_company_2/js/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/it_company_2/css/media.css" beforeDir="false" afterPath="$PROJECT_DIR$/it_company_2/css/media.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/it_company_2/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/it_company_2/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/it_company_2/it_company.html" beforeDir="false" afterPath="$PROJECT_DIR$/it_company_2/it_company.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/porten_clock_1/css/media.css" beforeDir="false" afterPath="$PROJECT_DIR$/porten_clock_1/css/media.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/porten_clock_1/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/porten_clock_1/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/porten_clock_1/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/porten_clock_1/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/porten_clock_1/porten_clock.html" beforeDir="false" afterPath="$PROJECT_DIR$/porten_clock_1/porten_clock.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +82,7 @@
       <workItem from="1608377828924" duration="5091000" />
       <workItem from="1608390439775" duration="2902000" />
       <workItem from="1608397586438" duration="3773000" />
+      <workItem from="1608460648311" duration="5369000" />
     </task>
     <servers />
   </component>

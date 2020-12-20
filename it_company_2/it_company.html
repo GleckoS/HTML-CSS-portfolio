@@ -14,15 +14,18 @@
 <body>
 <header>
     <nav>
-        <ul class="navigation-list">
+        <ul id="navigation-list" class="navigation-list">
             <li class="navigation-list__item"><a class="navigation-list__link" href="#">Главная</a></li>
             <li class="navigation-list__item"><a class="navigation-list__link" href="#">Наши проекты</a></li>
             <li class="navigation-list__item"><a class="navigation-list__link" href="#">Услуги</a></li>
             <li class="navigation-list__item"><a class="navigation-list__link" href="#">Новости</a></li>
             <li class="navigation-list__item"><a class="navigation-list__link" href="#">Контакты</a></li>
         </ul>
+        <div id="nav-search__mobile" class="nav-search__mobile" onclick="mobileNav()">
+            <span class="nav-search__mobile-button"></span>
+        </div>
     </nav>
-    <div class="hero-content">
+    <div id="hero-content" class="hero-content">
         <p class="hero-content__title">Передовая IT студия</p>
         <h2 class="hero-content__text">Мы создаем легкие решения сложных задач и проблем</h2>
         <a class="hero-content__link" href="#">Наши проекты</a>
@@ -362,7 +365,7 @@
 </section>
 <footer>
     <div class="container footer-container">
-            <div>
+            <div class="footer-item">
                 <h3>Контактная информация</h3>
                 <ul class="footer-nav__list">
                     <li class="footer-nav__list-item"><a class="footer-nav__list-link" href="#">test@test.ru</a></li>
@@ -372,7 +375,7 @@
                         33</a></li>
                 </ul>
             </div>
-            <div>
+            <div class="footer-item">
                 <h3>Основные ссылки</h3>
                 <ul>
                     <li class="footer-nav__list-item"><a class="footer-nav__list-link" href="#">Главаня</a></li>
@@ -381,7 +384,7 @@
                     <li class="footer-nav__list-item"><a class="footer-nav__list-link" href="#">Контакты</a></li>
                 </ul>
             </div>
-            <div>
+            <div class="footer-item">
                 <h3>Наши проекты</h3>
                 <ul>
                     <li class="footer-nav__list-item"><a class="footer-nav__list-link" href="#">РосНано</a></li>
@@ -391,7 +394,7 @@
                     </li>
                 </ul>
             </div>
-            <div>
+            <div class="footer-item">
                 <h3>Социальные сети</h3>
                 <ul>
                     <li class="footer-nav__list-item"><a class="footer-nav__list-link" href="#">VK.com</a></li>
@@ -408,5 +411,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="./js/jquery.spincrement.min.js"></script>
 <script src="./js/spincrement.js"></script>
+<script src="./js/index.js"></script>
 </body>
 </html>

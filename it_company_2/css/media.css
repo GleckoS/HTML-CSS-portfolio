@@ -18,13 +18,124 @@
         margin: 40px auto 0;
     }
 
+    .services-content {
+        flex-wrap: wrap;
+    }
+
     .services-item {
         display: block;
+        padding: 20px 0;
     }
 
     .services-item__inform {
         margin: 30px auto;
         text-align: center;
         width: 225px;
+    }
+
+    header {
+        overflow: hidden;
+    }
+
+    .nav-search__mobile {
+        display: block;
+        position: absolute;
+        top: 50px;
+        left: 10px;
+        z-index: 3;
+        padding: 10px;
+    }
+
+    .navigation-list {
+        height: 100vh;
+        overflow: hidden;
+        transform: translateX(100vw);
+        transition: .3s linear;
+        background-color: rgba(0, 0, 0, .5);
+        z-index: 2;
+    }
+
+    .navigation-list__item {
+        display: block;
+        width: 100vw;
+        padding: 0;
+    }
+
+    .navigation-list__link {
+        display: block;
+        width: 100vw;
+        padding: 28px 0 27px;
+        text-align: center;
+        font-size: 36px;
+    }
+
+    .navigation-list.active {
+        transform: translateX(0);
+    }
+
+    .hero-content.active {
+        opacity: 0;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .footer-item {
+        padding: 20px 10vw;
+        width: 30vw;
+    }
+}
+
+@media (max-width: 732px) {
+    .prof-inform__container {
+        flex-direction: column;
+        padding: 60px 15px 0;
+    }
+
+    .prof-inform__title {
+        font-size: 28px;
+        line-height: 42px;
+    }
+
+    .prof-inform__link-wrapper {
+        padding-top: 50px;
+    }
+
+    .footer-item {
+        padding: 20px 5vw;
+        width: 40vw;
+    }
+}
+
+@media (max-width: 471px) {
+    .work-fakeButton {
+        width: 286px;
+    }
+
+    .hero-content__text {
+        font-size: 42px;
+        line-height: 52px;
+    }
+
+    .work-content__input {
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+
+    .work-content__submit {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        padding: 15px 95.5px;
+        font-size: 14px;
+        margin-left: 0;
+    }
+
+    .footer-item {
+        padding: 20px 45px;
+        width: calc(100vw - 90px);
+        text-align: center;
     }
 }
