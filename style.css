@@ -1,0 +1,30 @@
+html{
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+header,
+footer,
+section{
+    height: 100vh;
+    width: 100vw;
+}
+
+#anchor1{
+    background: #c6c6c6;
+}
+
+#anchor2{
+    background-color: chocolate;
+}
+
+#anchor3{
+    background-color: coral;
+}
+
+#anchor4{
+    background-color: red;
+}
