@@ -20,10 +20,104 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="846de17f-820c-4f84-b89b-772a24765d2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/header-bg.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/it_company.html.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/porten_clock.html.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/trans_light.html.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/person.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/it_company_2/css/media.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/it_company_2/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/it_company_2/img/hero.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/it_company_2/img/projects.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/it_company_2/img/statistic.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/it_company_2/img/video.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/it_company_2/img/works.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/it_company_2/it_company.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/it_company_2/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/it_company_2/js/jquery.spincrement.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/it_company_2/js/spincrement.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/porten_clock_1/css/media.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/porten_clock_1/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/porten_clock_1/fonts/SIL Open Font License.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/porten_clock_1/fonts/postnobillscolombo-bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/porten_clock_1/fonts/postnobillscolombo-extrabold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/porten_clock_1/fonts/postnobillscolombo-light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/porten_clock_1/fonts/postnobillscolombo-medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/porten_clock_1/fonts/postnobillscolombo-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/porten_clock_1/fonts/postnobillscolombo-semibold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/porten_clock_1/img/brand.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/porten_clock_1/img/clock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/porten_clock_1/img/firstScreen.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/porten_clock_1/img/footer.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/porten_clock_1/img/man.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/porten_clock_1/img/newSeason.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/porten_clock_1/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/porten_clock_1/porten_clock.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/trans_light_3/css/media.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/trans_light_3/css/slider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/trans_light_3/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/trans_light_3/img/catalog_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/trans_light_3/img/catalog_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/trans_light_3/img/catalog_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/trans_light_3/img/hero.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/trans_light_3/img/news_1.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/trans_light_3/img/news_2.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/trans_light_3/img/news_3.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/trans_light_3/img/slider_1.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/trans_light_3/img/slider_2.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/trans_light_3/img/soundwire-server-2-5.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/trans_light_3/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/trans_light_3/js/slider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/trans_light_3/trans_light.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/trans_light_3/trans_light.html" beforeDir="false" afterPath="$PROJECT_DIR$/trans_light_3/trans_light.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html.html" beforeDir="false" afterPath="$PROJECT_DIR$/html.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/it_company_2/css/media.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/it_company_2/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/it_company_2/img/hero.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/it_company_2/img/projects.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/it_company_2/img/statistic.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/it_company_2/img/video.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/it_company_2/img/works.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/it_company_2/it_company.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/it_company_2/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/it_company_2/js/jquery.spincrement.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/it_company_2/js/spincrement.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/porten_clock_1/css/media.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/porten_clock_1/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/porten_clock_1/fonts/SIL Open Font License.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/porten_clock_1/fonts/postnobillscolombo-bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/porten_clock_1/fonts/postnobillscolombo-extrabold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/porten_clock_1/fonts/postnobillscolombo-light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/porten_clock_1/fonts/postnobillscolombo-medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/porten_clock_1/fonts/postnobillscolombo-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/porten_clock_1/fonts/postnobillscolombo-semibold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/porten_clock_1/img/brand.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/porten_clock_1/img/clock.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/porten_clock_1/img/firstScreen.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/porten_clock_1/img/footer.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/porten_clock_1/img/man.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/porten_clock_1/img/newSeason.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/porten_clock_1/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/porten_clock_1/porten_clock.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trans_light_3/css/media.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trans_light_3/css/slider.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trans_light_3/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trans_light_3/img/catalog_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trans_light_3/img/catalog_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trans_light_3/img/catalog_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trans_light_3/img/hero.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trans_light_3/img/news_1.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trans_light_3/img/news_2.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trans_light_3/img/news_3.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trans_light_3/img/slider_1.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trans_light_3/img/slider_2.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trans_light_3/img/soundwire-server-2-5.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trans_light_3/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trans_light_3/js/slider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trans_light_3/trans_light.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,11 +128,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1l7RybyycgIQdhffgb34Y5xNVlN" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -86,6 +184,10 @@
       <workItem from="1608492211491" duration="2287000" />
       <workItem from="1608638403282" duration="2762000" />
       <workItem from="1608839447159" duration="4201000" />
+      <workItem from="1608891916961" duration="2561000" />
+      <workItem from="1608899139159" duration="9127000" />
+      <workItem from="1608916454427" duration="6271000" />
+      <workItem from="1608978739512" duration="7237000" />
     </task>
     <servers />
   </component>
@@ -103,5 +205,8 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
