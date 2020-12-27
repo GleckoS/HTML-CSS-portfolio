@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="ru">
+<!-- TODO 3d hero, fullpage scroll, animations -->
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -9,7 +10,7 @@
     <title>Portfolio</title>
     <meta name="viewport" content="width=device-width">
 
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./media.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -17,27 +18,44 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body class="fullScreen">
-<!--<a href="porten_clock_1/porten_clock.html">Porten</a>
-<a href="it_company_2/it_company.html">IT</a>
-<a href="trans_light_3/trans_light.html">Light</a>-->
-<div class="right-bar"></div>
-<div class="left-bar"></div>
+<div class="right-bar">
+    <div class="right-bar__content">
+        <div class="right-bar__item">
+            <a class="right-bar__item-link" href="https://www.facebook.com/bohdan.shevchenko.50"><i
+                class="fab fa-facebook right-bar__item-icon"></i>
+            </a>
+        </div>
+        <div class="right-bar__item">
+            <a class="right-bar__item-link" href="https://www.instagram.com/bohdan_sheva">
+                <i class="fab fa-instagram right-bar__item-icon"></i>
+            </a>
+        </div>
+        <div class="right-bar__item">
+            <a class="right-bar__item-link" href="https://github.com/GleckoS">
+                <i class="fab fa-github right-bar__item-icon"></i>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="left-bar">
+
+</div>
+<canvas id="canvas"></canvas>
 <div class="main-content">
-    <section class="hero">
+    <section id="about"  class="hero">
         <div class="top-bar"></div>
         <nav class="nav">
             <ul class="nav-list">
-                <li class="nav-list__item active"><a href="#" class="nav-list__link"><i
-                        class="fas fa-user"></i>About</a></li>
-                <li class="nav-list__item"><a href="#" class="nav-list__link">Skills</a></li>
-                <li class="nav-list__item"><a href="#" class="nav-list__link">Portfolio</a></li>
-                <li class="nav-list__item"><a href="#" class="nav-list__link">Info & facts</a></li>
-                <li class="nav-list__item"><a href="#" class="nav-list__link">Contact</a></li>
+                <li class="nav-list__item _active"><a href="#about" class="nav-list__link">About</a></li>  <!-- TODO переместить на левую панель -->
+                <li class="nav-list__item"><a href="#skills" class="nav-list__link">Skills</a></li>
+                <li class="nav-list__item"><a href="#portfolio" class="nav-list__link">Portfolio</a></li>
+                <li class="nav-list__item"><a href="#facts" class="nav-list__link">Info & facts</a></li>
+                <li class="nav-list__item"><a href="#contact" class="nav-list__link">Contact</a></li>
             </ul>
         </nav>
         <div class="about container">
             <div class="about-person">
-                <img class="about-person__img" alt="my photo" src="./user.png"/> <!-- Change to my photo -->
+                <img class="about-person__img" alt="my photo" src="./img/user.png"/> <!-- TODO Change to my photo -->
                 <h2 class="about-person__title">I'm Bohdan Shevchenko</h2>
                 <p class="about-person__text">Front-end developer</p>
             </div>
@@ -54,7 +72,7 @@
             </div>
         </div>
     </section>
-    <section class="skills">
+    <section id="skills" class="skills">
         <div class="container skills-container">
             <div class="box">
                 <div class="box-inner">
@@ -66,30 +84,30 @@
             <p class="skills-text">
                 Right. Let's throw some light on my skills.
             </p>
-            <div class="metrics active"> <!--TODO сменить актив на анимацию-->
+            <div class="metrics _anim-items">
                 <div class="metrics-box">
-                    <p class="metrics-number b_70">70%</p>
-                    <div class="metrics-line h_70">
+                    <p class="metrics-number b_70 metrics-anim_1">70%</p>
+                    <div class="metrics-line h_70 metrics-anim_1">
                     </div>
                 </div>
                 <div class="metrics-box">
-                    <p class="metrics-number b_80">80%</p>
-                    <span class="metrics-line h_80">
+                    <p class="metrics-number b_80 metrics-anim_2">80%</p>
+                    <span class="metrics-line h_80 metrics-anim_2">
                     </span>
                 </div>
                 <div class="metrics-box">
-                    <p class="metrics-number b_50">50%</p>
-                    <span class="metrics-line h_50">
+                    <p class="metrics-number b_50 metrics-anim_3">50%</p>
+                    <span class="metrics-line h_50 metrics-anim_3">
                     </span>
                 </div>
                 <div class="metrics-box">
-                    <p class="metrics-number b_90">90%</p>
-                    <span class="metrics-line h_90">
+                    <p class="metrics-number b_90 metrics-anim_4">90%</p>
+                    <span class="metrics-line h_90 metrics-anim_4">
                     </span>
                 </div>
                 <div class="metrics-box">
-                    <p class="metrics-number b_60">60%</p>
-                    <span class="metrics-line h_60">
+                    <p class="metrics-number b_60 metrics-anim_5">60%</p>
+                    <span class="metrics-line h_60 metrics-anim_5">
                     </span>
                 </div>
             </div>
@@ -102,7 +120,7 @@
             </ul>
         </div>
     </section>
-    <section class="portfolio">
+    <section id="portfolio" class="portfolio">
         <div class="container portfolio-container">
             <div class="box box_white">
                 <div class="box-inner box-inner_white">
@@ -114,10 +132,17 @@
             <p class="portfolio-text">
                 Check out my latest works
             </p>
-            <div class="portfolio-content">
+            <div class="portfolio-sort">
+                <button class="portfolio-sort__button _active">All works</button>
+                <button class="portfolio-sort__button">Corporation</button>
+                <button class="portfolio-sort__button">Landings</button>
+                <button class="portfolio-sort__button">Portals</button>
+            </div>
+            <div class="portfolio-content"> <!-- TODO передавать массив мапом, пример в studiourody -->
                 <div class="portfolio-content__item">
                     <div class="portfolio-content__item-inner">
-                        <img class="portfolio-content__item-img" src="./img/it_company.html.webp">
+                        <img alt="preview of it company site" class="portfolio-content__item-img"
+                             src="./img/it_company.html.webp">
                     </div>
                     <div class="portfolio-content__item-inform">
                         <h5 class="portfolio-content__item-title">It Company</h5>
@@ -127,31 +152,109 @@
                 </div>
                 <div class="portfolio-content__item">
                     <div class="portfolio-content__item-inner">
-                        <img class="portfolio-content__item-img" src="./img/trans_light.html.webp">
+                        <img alt="preview of trans light site" class="portfolio-content__item-img"
+                             src="./img/trans_light.html.webp">
                     </div>
                     <div class="portfolio-content__item-inform">
                         <h5 class="portfolio-content__item-title">Trans-light</h5>
                         <p class="portfolio-content__item-text">Corporation website</p>
-                        <a href="./portfolio/trans_light_3/trans_light.html" class="portfolio-content__item-link">VIEW</a>
+                        <a href="./portfolio/trans_light_3/trans_light.html"
+                           class="portfolio-content__item-link">VIEW</a>
                     </div>
                 </div>
                 <div class="portfolio-content__item">
                     <div class="portfolio-content__item-inner">
-                        <img class="portfolio-content__item-img" src="./img/porten_clock.html.webp">
+                        <img alt="preview of cloak sealing site" class="portfolio-content__item-img"
+                             src="./img/porten_clock.html.webp">
                     </div>
                     <div class="portfolio-content__item-inform">
                         <h5 class="portfolio-content__item-title">porten-clock</h5>
                         <p class="portfolio-content__item-text">Corporation website</p>
-                        <a href="./portfolio/porten_clock_1/porten_clock.html" class="portfolio-content__item-link">VIEW</a>
+                        <a href="./portfolio/porten_clock_1/porten_clock.html"
+                           class="portfolio-content__item-link">VIEW</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section>
+    <section id="facts" class="facts">
+        <div class="container facts-container">
+            <div class="box">
+                <div class="box-inner">
+                </div>
+            </div>
+            <h2 class="facts-title">
+                Info & Facts
+            </h2>
+            <p class="facts-text">
+                Find out more miscellaneous facts about me
+            </p>
+            <div class="facts-content _anim-items">
+                <div class="facts-column_left">
+                    <ul>
+                        <li class="facts-column_left__list-item facts-anim_1">Hobbies</li>
+                        <li class="facts-column_left__list-item facts-anim_2">Languages</li>
+                        <li class="facts-column_left__list-item facts-anim_3">Do I like to work from evenings until late nights and even morning?</li>
+                        <li class="facts-column_left__list-item facts-anim_4">What's the salary I expect</li>
+                        <li class="facts-column_left__list-item facts-anim_5">Where did i study?</li>
+                    </ul>
+                </div>
+                <div class="facts-string_central">
+                    <div class="facts-string_central__dot dot-1"></div>
+                    <div class="facts-string_central__dot dot-2"></div>
+                    <div class="facts-string_central__dot dot-3"></div>
+                    <div class="facts-string_central__dot dot-4"></div>
+                    <div class="facts-string_central__dot dot-5"></div>
+                </div>
+                <div class="facts-column_right">
+                    <ul>
+                        <li class="facts-column_right__list-item facts-anim_1">Footbal, Sports, Movies, Theatre, Good Musi, etc</li>
+                        <li class="facts-column_right__list-item facts-anim_2">English(native), German(excelent), Italian(medium)</li>
+                        <li class="facts-column_right__list-item facts-anim_3">Oh yeah! I do</li>
+                        <li class="facts-column_right__list-item facts-anim_4">Make me an offer so we can start talking</li>
+                        <li class="facts-column_right__list-item facts-anim_5">llowap</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="container contact-container">
+            <div class="box">
+                <div class="box-inner">
+                </div>
+            </div>
+            <h2 class="contact-title">
+                Contact Me
+            </h2>
+            <p class="contact-text">
+                Agree - it's time to get in touch
+            </p>
+            <div class="contact-content">
+                <div class="contact-content__item">
 
+                </div>
+                <div class="contact-content__item">
+                    <div>
+                        <h3>ADDRESS</h3>
+                        <p>Poland, Krakow, Bobrzyńskiego 27/53</p>
+                    </div>
+                    <div>
+                        <h3>PHONE NUMBER</h3>
+                        <p>+48 730 788 035</p>
+                    </div>
+                    <div>
+                        <h3>E-MAIL</h3>
+                        <p>shevabogdan16@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-bar"></div>
     </section>
 </div>
-<script src="index.js"></script>
+<script src="https://kit.fontawesome.com/9aa0040d01.js" crossorigin="anonymous"></script>
+<script src="./js/index.js"></script>
+<script src="./js/particles.js"></script>
 </body>
 </html>
