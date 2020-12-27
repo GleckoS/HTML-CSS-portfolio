@@ -1,6 +1,21 @@
 @media(max-width: 1024px){
+    .contact,
     .portfolio{
         background-color: #8e989c;
+    }
+}
+@media(max-height: 864px){
+
+    .contact-container,
+    .facts-container,
+    .portfolio-container,
+    .skills-container{
+        padding-top: calc(100vh / 12);
+    }
+}
+@media(max-height: 764px){
+    .metrics{
+        height: 35vh;
     }
 }
 /* TODO не работающие кнопки < 1024, не работающая анимация после кнопки */

@@ -97,3 +97,8 @@ if (animItems.length > 0) {
         }, 100)
     })
 }
+
+VanillaTilt.init(document.querySelector(".about"), {
+    max: 3,
+    speed: 200
+});
