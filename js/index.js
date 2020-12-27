@@ -7,6 +7,22 @@ window.addEventListener('load', function () {
         let spinValue = 0
         let canScroll = true
 
+        const buttons = document.querySelectorAll('.nav-list__item');
+
+        buttons[0].classList.add('_active');
+
+        for ( let i=0; i<buttons.length; i++ ) {
+
+            buttons[i].addEventListener('click', function() {
+                document.querySelector('.nav-list__item._active').classList.remove('_active');
+                this.classList.add('_active');
+                spinValue = i;
+                scrollContent(spinValue);
+
+            });
+
+        }
+
         window.addEventListener('wheel', function (e) {
 
             if (canScroll) {
@@ -34,6 +50,9 @@ window.addEventListener('load', function () {
 
         function scrollContent(count) {
             content.setAttribute('style', 'transform: translateY(-' + count * 100 + 'vh)')
+
+            document.querySelector('.nav-list__item._active').classList.remove('_active');
+            buttons[count].classList.add('_active');
         }
     }
 })
@@ -41,7 +60,9 @@ window.addEventListener('load', function () {
 const animItems = document.querySelectorAll(`._anim-items`)
 if (animItems.length > 0) {
     window.addEventListener(`wheel`, () => {
+
         setTimeout(() => {
+
             function animOnScroll() {
                 for (let index = 0; index < animItems.length; index++) {
                     const animItem = animItems[index]
@@ -72,6 +93,7 @@ if (animItems.length > 0) {
             setTimeout(() => {
                 animOnScroll()
             }, 300)
+
         }, 100)
     })
 }

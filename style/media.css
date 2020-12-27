@@ -1,0 +1,6 @@
+@media(max-width: 1024px){
+    .portfolio{
+        background-color: #8e989c;
+    }
+}
+/* TODO не работающие кнопки < 1024, не работающая анимация после кнопки */

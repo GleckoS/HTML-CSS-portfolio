@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width">
 
     <link rel="stylesheet" href="./style/style.css">
-    <link rel="stylesheet" href="./media.css">
+    <link rel="stylesheet" href="./style/media.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -38,21 +38,20 @@
     </div>
 </div>
 <div class="left-bar">
-
+    <nav class="nav">
+        <ul class="nav-list">
+            <li class="nav-list__item"><a class="nav-list__link">About</a></li>
+            <li class="nav-list__item"><a class="nav-list__link">Skills</a></li>
+            <li class="nav-list__item"><a class="nav-list__link">Portfolio</a></li>
+            <li class="nav-list__item"><a class="nav-list__link">Info & facts</a></li>
+            <li class="nav-list__item"><a class="nav-list__link">Contact</a></li>
+        </ul>
+    </nav>
 </div>
 <canvas id="canvas"></canvas>
 <div class="main-content">
     <section id="about"  class="hero">
         <div class="top-bar"></div>
-        <nav class="nav">
-            <ul class="nav-list">
-                <li class="nav-list__item _active"><a href="#about" class="nav-list__link">About</a></li>  <!-- TODO переместить на левую панель -->
-                <li class="nav-list__item"><a href="#skills" class="nav-list__link">Skills</a></li>
-                <li class="nav-list__item"><a href="#portfolio" class="nav-list__link">Portfolio</a></li>
-                <li class="nav-list__item"><a href="#facts" class="nav-list__link">Info & facts</a></li>
-                <li class="nav-list__item"><a href="#contact" class="nav-list__link">Contact</a></li>
-            </ul>
-        </nav>
         <div class="about container">
             <div class="about-person">
                 <img class="about-person__img" alt="my photo" src="./img/user.png"/> <!-- TODO Change to my photo -->
@@ -84,7 +83,7 @@
             <p class="skills-text">
                 Right. Let's throw some light on my skills.
             </p>
-            <div class="metrics _anim-items">
+            <div class="metrics _anim-items _anim-no-hide">
                 <div class="metrics-box">
                     <p class="metrics-number b_70 metrics-anim_1">70%</p>
                     <div class="metrics-line h_70 metrics-anim_1">
@@ -189,7 +188,7 @@
             <p class="facts-text">
                 Find out more miscellaneous facts about me
             </p>
-            <div class="facts-content _anim-items">
+            <div class="facts-content _anim-items _anim-no-hide">
                 <div class="facts-column_left">
                     <ul>
                         <li class="facts-column_left__list-item facts-anim_1">Hobbies</li>
@@ -232,18 +231,36 @@
             </p>
             <div class="contact-content">
                 <div class="contact-content__item">
-
+                    <form class="contact-form">
+                        <div class="contact-form__group field">
+                            <input class="contact-form__field" placeholder="NAME" name="name" id='name' required>
+                            <label for="name" class="contact-form__label">NAME</label>
+                        </div>
+                        <div class="contact-form__group field">
+                            <input class="contact-form__field" placeholder="EMAIL" name="email" id='email' required>
+                            <label for="email" class="contact-form__label">EMAIL</label>
+                        </div>
+                        <div class="contact-form__group field">
+                            <input class="contact-form__field" placeholder="PHONE" name="phone" id='phone' required>
+                            <label for="phone" class="contact-form__label">PHONE</label>
+                        </div>
+                        <div class="contact-form__group field">
+                            <textarea class="contact-form__field" placeholder="MESSAGE" name="message" id='message' required></textarea>
+                            <label for="message" class="contact-form__label">MESSAGE</label>
+                        </div>
+                        <button class="contact-form__button">SEND ME THIS MESSAGE VIA EMAIL</button>
+                    </form>
                 </div>
                 <div class="contact-content__item">
-                    <div>
+                    <div class="contact-content__item-part">
                         <h3>ADDRESS</h3>
                         <p>Poland, Krakow, Bobrzyńskiego 27/53</p>
                     </div>
-                    <div>
+                    <div class="contact-content__item-part">
                         <h3>PHONE NUMBER</h3>
                         <p>+48 730 788 035</p>
                     </div>
-                    <div>
+                    <div class="contact-content__item-part">
                         <h3>E-MAIL</h3>
                         <p>shevabogdan16@gmail.com</p>
                     </div>
