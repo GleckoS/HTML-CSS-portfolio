@@ -1,6 +1,6 @@
 html {
     scroll-behavior: smooth;
-    overflow-y: scroll;
+    overflow-y: hidden;
     overflow-x: hidden;
 }
 
@@ -139,9 +139,9 @@ section {
     width: 100%;
     height: 100%;
     position: absolute;
-    left: 0;
+    left: 50%;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translate(-50%, -50%);
 }
 
 .nav-list {
@@ -303,6 +303,7 @@ section {
     position: relative;
     transform: rotateZ(45deg);
     transition: .6s linear;
+
 }
 
 .box:hover {
@@ -346,6 +347,7 @@ section {
 
 .box_white {
     border: 1px solid #FFFFFF;
+    box-shadow: 0 0 10px -3px #2e3d42;
 }
 
 .box_white::after,
@@ -515,7 +517,7 @@ section {
 }
 
 .metrics-names__item {
-    transform: rotateZ(90deg) translateY(40px) translateX(80px);
+    transform: rotateZ(90deg) translateY(40px) translateX(32%);
     width: 20%;
     font-weight: 900;
     font-size: 16px;
@@ -798,6 +800,7 @@ section {
 .contact-content {
     justify-content: center;
     display: flex;
+    box-shadow: 0 0 10px -3px #2e3d42;
 }
 
 .contact-content__item {

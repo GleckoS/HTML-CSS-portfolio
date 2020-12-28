@@ -1,21 +1,38 @@
-@media(max-width: 1024px){
+@media (max-width: 1024px) {
+    html{
+        overflow-y: scroll;
+    }
+
     .contact,
-    .portfolio{
+    .portfolio {
         background-color: #8e989c;
     }
 }
-@media(max-height: 864px){
+
+@media (max-height: 864px) {
 
     .contact-container,
     .facts-container,
     .portfolio-container,
-    .skills-container{
+    .skills-container {
         padding-top: calc(100vh / 12);
     }
+    .nav {
+        height: auto;
+    }
 }
-@media(max-height: 764px){
-    .metrics{
+
+@media (max-height: 764px) {
+
+    .nav {
+        top: 42%;
+    }
+
+    .metrics {
         height: 35vh;
     }
 }
+
+
+
 /* TODO не работающие кнопки < 1024, не работающая анимация после кнопки */
