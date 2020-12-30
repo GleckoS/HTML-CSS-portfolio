@@ -1,4 +1,4 @@
-window.addEventListener(`wheel`, () => {
+window.addEventListener(`scroll`, () => {
     setTimeout(() => {
         animOnScroll()
     }, 500)
