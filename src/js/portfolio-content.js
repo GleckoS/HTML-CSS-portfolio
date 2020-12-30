@@ -3,22 +3,29 @@ const portfolio = [
         imgSrc: './src/img/it_company.html.webp',
         link: './src/portfolio/it_company_2/it_company.html',
         title: 'It Company',
-        text: 'Corporation website'
+        text: 'Corporation website',
+        type: 'homepage'
     },
     {
         imgSrc: './src/img/trans_light.html.webp',
         link: './src/portfolio/trans_light_3/trans_light.html',
         title: 'Trans-light',
-        text: 'Corporation website'
+        text: 'Corporation website',
+        type: 'homepage'
     },
     {
         imgSrc: './src/img/porten_clock.html.webp',
         link: './src/portfolio/porten_clock_1/porten_clock.html',
         title: 'porten-clock',
-        text: 'Corporation website'
+        text: 'Corporation website',
+        type: 'homepage'
     }
 ]
-portfolio.map(item => {
+
+let container = document.getElementById("portfolio-content")
+let buttons = Array.from(document.querySelectorAll('.portfolio-sort__button'))
+
+const addItems = (item) => {
     let str = `
         <div class="portfolio-content__item">
             <div class="portfolio-content__item-inner">
@@ -32,5 +39,53 @@ portfolio.map(item => {
         </div>
         `
     let doc = new DOMParser().parseFromString(str, 'text/html')
-    document.getElementById("portfolio-content").append(doc.firstChild)
-})
+    container.append(doc.firstChild)
+}
+
+const clearClasses = () => {
+    buttons.forEach(node => {
+        node.classList.remove('_active')
+    })
+}
+
+const initialContent = () => {
+    clearClasses()
+    document.getElementById('all').classList.add('_active')
+    container.innerHTML = '';
+    portfolio.map(item => {
+        addItems(item)
+    })
+}
+
+const homepages = () => {
+    clearClasses()
+    document.getElementById('homepages').classList.add('_active')
+    container.innerHTML = '';
+    portfolio.map(item => {
+        if (item.type === 'homepage') {
+            addItems(item)
+        }
+    })
+}
+
+const landings = () => {
+    clearClasses()
+    document.getElementById('landings').classList.add('_active')
+    container.innerHTML = '';
+    portfolio.map(item => {
+        if (item.type === 'landings') {
+            addItems(item)
+        }
+    })
+}
+
+const ecommerce = () => {
+    clearClasses()
+    document.getElementById('ecommerce').classList.add('_active')
+    container.innerHTML = '';
+    portfolio.map(item => {
+        if (item.type === 'ecommerce') {
+            addItems(item)
+        }
+    })
+}
