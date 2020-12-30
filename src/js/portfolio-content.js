@@ -1,18 +1,18 @@
 const portfolio = [
     {
-        imgSrc: 'img/it_company.html.webp',
+        imgSrc: './src/img/it_company.html.webp',
         link: './src/portfolio/it_company_2/it_company.html',
         title: 'It Company',
         text: 'Corporation website'
     },
     {
-        imgSrc: 'img/trans_light.html.webp',
+        imgSrc: './src/img/trans_light.html.webp',
         link: './src/portfolio/trans_light_3/trans_light.html',
         title: 'Trans-light',
         text: 'Corporation website'
     },
     {
-        imgSrc: 'img/porten_clock.html.webp',
+        imgSrc: './src/img/porten_clock.html.webp',
         link: './src/portfolio/porten_clock_1/porten_clock.html',
         title: 'porten-clock',
         text: 'Corporation website'
