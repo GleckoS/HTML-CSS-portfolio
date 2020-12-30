@@ -3,6 +3,11 @@ window.addEventListener(`scroll`, () => {
         animOnScroll()
     }, 500)
 })
+window.addEventListener(`wheel`, () => {
+    setTimeout(() => {
+        animOnScroll()
+    }, 500)
+})
 
 if (window.innerWidth > 1024) {
 
