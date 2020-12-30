@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="ru">
+<html id="html" lang="ru">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -39,11 +39,11 @@
 <div class="left-bar">
     <nav class="nav">
         <ul class="nav-list">
-            <li class="nav-list__item"><a class="nav-list__link">About</a></li>
-            <li class="nav-list__item"><a class="nav-list__link">Skills</a></li>
-            <li class="nav-list__item"><a class="nav-list__link">Portfolio</a></li>
-            <li class="nav-list__item"><a class="nav-list__link">Info & facts</a></li>
-            <li class="nav-list__item"><a class="nav-list__link">Contact</a></li>
+            <li class="nav-list__item"><a href="#about" class="nav-list__link">About</a></li>
+            <li class="nav-list__item"><a href="#skills" class="nav-list__link">Skills</a></li>
+            <li class="nav-list__item"><a href="#portfolio" class="nav-list__link">Portfolio</a></li>
+            <li class="nav-list__item"><a href="#facts" class="nav-list__link">Info & facts</a></li>
+            <li class="nav-list__item"><a href="#contact" class="nav-list__link">Contact</a></li>
         </ul>
     </nav>
 </div>
@@ -113,7 +113,7 @@
             <ul class="metrics-names">
                 <li class="metrics-names__item">HTML</li>
                 <li class="metrics-names__item">CSS</li>
-                <li class="metrics-names__item">JavaScript</li>
+                <li class="metrics-names__item">JS</li>
                 <li class="metrics-names__item">React</li>
                 <li class="metrics-names__item">Redux</li>
             </ul>
@@ -138,42 +138,8 @@
                 <button class="portfolio-sort__button">Landings</button>
                 <button class="portfolio-sort__button">Portals</button>
             </div>
-            <div class="portfolio-content"> <!-- TODO передавать массив мапом, пример в studiourody -->
-                <div class="portfolio-content__item">
-                    <div class="portfolio-content__item-inner">
-                        <img alt="preview of it company site" class="portfolio-content__item-img"
-                             src="img/it_company.html.webp">
-                    </div>
-                    <div class="portfolio-content__item-inform">
-                        <h5 class="portfolio-content__item-title">It Company</h5>
-                        <p class="portfolio-content__item-text">Corporation website</p>
-                        <a href="portfolio/it_company_2/it_company.html" class="portfolio-content__item-link">VIEW</a>
-                    </div>
-                </div>
-                <div class="portfolio-content__item">
-                    <div class="portfolio-content__item-inner">
-                        <img alt="preview of trans light site" class="portfolio-content__item-img"
-                             src="img/trans_light.html.webp">
-                    </div>
-                    <div class="portfolio-content__item-inform">
-                        <h5 class="portfolio-content__item-title">Trans-light</h5>
-                        <p class="portfolio-content__item-text">Corporation website</p>
-                        <a href="portfolio/trans_light_3/trans_light.html"
-                           class="portfolio-content__item-link">VIEW</a>
-                    </div>
-                </div>
-                <div class="portfolio-content__item">
-                    <div class="portfolio-content__item-inner">
-                        <img alt="preview of cloak sealing site" class="portfolio-content__item-img"
-                             src="img/porten_clock.html.webp">
-                    </div>
-                    <div class="portfolio-content__item-inform">
-                        <h5 class="portfolio-content__item-title">porten-clock</h5>
-                        <p class="portfolio-content__item-text">Corporation website</p>
-                        <a href="portfolio/porten_clock_1/porten_clock.html"
-                           class="portfolio-content__item-link">VIEW</a>
-                    </div>
-                </div>
+            <div id="portfolio-content" class="portfolio-content">
+                <!-- Контент генерируется в js/portfolio-content.js -->
             </div>
         </div>
     </section>
@@ -191,31 +157,33 @@
                 Find out more miscellaneous facts about me
             </p>
             <div class="facts-content _anim-items _anim-no-hide">
-                <div class="facts-column_left">
-                    <ul>
-                        <li class="facts-column_left__list-item facts-anim_1">Hobbies</li>
-                        <li class="facts-column_left__list-item facts-anim_2">Languages</li>
-                        <li class="facts-column_left__list-item facts-anim_3">Do I like to work from evenings until late nights and even morning?</li>
-                        <li class="facts-column_left__list-item facts-anim_4">What's the salary I expect</li>
-                        <li class="facts-column_left__list-item facts-anim_5">Where did i study?</li>
-                    </ul>
-                </div>
-                <div class="facts-string_central">
-                    <div class="facts-string_central__dot dot-1"></div>
-                    <div class="facts-string_central__dot dot-2"></div>
-                    <div class="facts-string_central__dot dot-3"></div>
-                    <div class="facts-string_central__dot dot-4"></div>
-                    <div class="facts-string_central__dot dot-5"></div>
-                </div>
-                <div class="facts-column_right">
-                    <ul>
-                        <li class="facts-column_right__list-item facts-anim_1">Sports, Movies, Books, Good Music, etc</li>
-                        <li class="facts-column_right__list-item facts-anim_2">Russian(native), Ukrainian(native), Polish(medium), English(medium)</li>
-                        <li class="facts-column_right__list-item facts-anim_3">Oh yeah! I do</li>
-                        <li class="facts-column_right__list-item facts-anim_4">Make me an offer so we can start talking</li>
-                        <li class="facts-column_right__list-item facts-anim_5"><a class="facts-column_right__list-link" href="https://www.freecodecamp.org">Click!</a></li>
-                    </ul>
-                </div>
+                <ul class="facts-list">
+                    <li class="facts-list__item">
+                        <div class="facts-list__item-question facts-anim_1">Hobbies</div>
+                        <div class="facts-list__item-dot"></div>
+                        <div class="facts-list__item-answer facts-anim_1"><p class="facts-list__item-answer__text">Sports, Movies, Books, Good Music, etc</p></div>
+                    </li>
+                    <li class="facts-list__item">
+                        <div class="facts-list__item-question facts-anim_2 ">Languages</div>
+                        <div class="facts-list__item-dot"></div>
+                        <div class="facts-list__item-answer facts-anim_2"><p class="facts-list__item-answer__text">Russian(native), Ukrainian(native), Polish(medium), English(medium)</p></div>
+                    </li>
+                    <li class="facts-list__item">
+                        <div class="facts-list__item-question facts-anim_3">Do I like to work from evenings until late nights and even morning?</div>
+                        <div class="facts-list__item-dot"></div>
+                        <div class="facts-list__item-answer facts-anim_3"><p class="facts-list__item-answer__text">Oh yeah! I do</div>
+                    </li>
+                    <li class="facts-list__item">
+                        <div class="facts-list__item-question facts-anim_4">What's the salary I expect</div>
+                        <div class="facts-list__item-dot"></div>
+                        <div class="facts-list__item-answer facts-anim_4"><p class="facts-list__item-answer__text">Make me an offer so we can start talking</p></div>
+                    </li>
+                    <li class="facts-list__item">
+                        <div class="facts-list__item-question facts-anim_5">Where did i study?</div>
+                        <div class="facts-list__item-dot"></div>
+                        <div class="facts-list__item-answer facts-anim_5"><p class="facts-list__item-answer__text"><a class="link" href="https://www.freecodecamp.org">Click!</a></p></div>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
@@ -275,10 +243,13 @@
 </div>
 
 <script src="https://kit.fontawesome.com/9aa0040d01.js" crossorigin="anonymous"></script>
+
+<script src="./js/portfolio-content.js"></script>
 <script src="./js/fullPage-scroll.js"></script>
 <script src="./js/animation.js"></script>
 <script src="./js/particles.js"></script>
 <script src="./js/vanila-tilt.min.js"></script>
 <script src="./js/main.js"></script>
+
 </body>
 </html>

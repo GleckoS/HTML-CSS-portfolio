@@ -1,4 +1,7 @@
-html {
+html{
+    overflow: visible; /* костыль для portfolio content */
+}
+#html {
     scroll-behavior: smooth;
     overflow-y: hidden;
     overflow-x: hidden;
@@ -61,6 +64,7 @@ section {
     height: 100vh;
     width: calc(100vw - 60px);
     overflow: hidden;
+    position: relative;
 }
 
 .container {
@@ -199,7 +203,7 @@ section {
 
 .about-person {
     width: 330px;
-    height: 495px;
+    min-height: 495px;
     padding: 30px;
     background-color: #FFFFFF;
     box-shadow: 0 0 10px -3px #2e3d42;
@@ -265,7 +269,7 @@ section {
     transform: translateZ(20px)
 }
 
-.about-inform__link:focus {
+.about-inform__link:active {
     transform: translateZ(0px);
     background-color: #FFFFFF;
     color: #333333;
@@ -583,7 +587,7 @@ section {
 }
 
 .portfolio-content__item:hover {
-    transform: scale(2);
+    transform: scale(1.2);
 }
 
 .portfolio-content__item:hover .portfolio-content__item-inform {
@@ -630,6 +634,7 @@ section {
 .portfolio-sort {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .portfolio-sort__button {
@@ -637,7 +642,7 @@ section {
     color: #FFFFFF;
     border: 1px solid #FFFFFF;
     padding: 10px 20px;
-    margin: 30px 20px;
+    margin: 10px 20px;
     transition: .2s linear;
     cursor: pointer;
 }
@@ -673,66 +678,54 @@ section {
 }
 
 .facts-content {
+    position: relative;
+    min-height: 400px;
+}
+
+.facts-content::before{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background-color: #bbbdbe;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.facts-list__item{
     display: flex;
     justify-content: center;
-}
-
-.facts-column_left {
-    text-align: right;
-    width: 48%;
-    font-style: italic;
-    font-size: 14px;
-}
-
-.facts-string_central {
-    width: 1px;
-    margin: 0 auto;
-    background-color: #bbbdbe;
     position: relative;
 }
 
-.facts-string_central__dot {
-    height: 5px;
-    width: 5px;
+.facts-list__item-dot{
+    position: absolute;
+    width: 4px;
+    height: 4px;
     background-color: #bbbdbe;
     border-radius: 50%;
-    transform: translateX(-40%);
+    top: 50%;
+}
+
+.facts-list__item-question,
+.facts-list__item-answer{
+    width: 50%;
+    padding: 30px 20px 40px 0;
+    position: relative;
+}
+
+.facts-list__item-question{
+    text-align: right;
+}
+
+.facts-list__item-answer{
+    padding: 30px 0 40px 20px;
+}
+
+.facts-list__item-answer__text{
     position: absolute;
-}
-
-.dot-1 {
-    top: 9.5%;
-}
-
-.dot-2 {
-    top: 29.5%;
-}
-
-.dot-3 {
-    top: 49.5%;
-}
-
-.dot-4 {
-    top: 69.5%;
-}
-
-.dot-5 {
-    top: 89.5%;
-}
-
-.facts-column_right {
-    width: 48%;
-    font-size: 14px;
-}
-
-.facts-column_left__list-item,
-.facts-column_right__list-item {
-    padding: 20px 0;
-    transition: .6s ease-out;
-}
-
-.facts-column_right__list-link{
-    border-bottom: 1px solid black;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .facts-anim_1 {
@@ -755,22 +748,22 @@ section {
     transition: .6s ease-out .4s;
 }
 
-.facts-column_left__list-item {
+.facts-list__item-question {
     transform: translateX(-100%);
     opacity: 0;
 }
 
-._active .facts-column_left__list-item {
+._active .facts-list__item-question {
     transform: translateX(0);
     opacity: 1;
 }
 
-.facts-column_right__list-item {
+.facts-list__item-answer {
     transform: translateX(100%);
     opacity: 0;
 }
 
-._active .facts-column_right__list-item {
+._active .facts-list__item-answer {
     transform: translateX(0);
     opacity: 1;
 }

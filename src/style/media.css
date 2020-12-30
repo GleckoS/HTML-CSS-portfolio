@@ -1,12 +1,123 @@
 @media (max-width: 1024px) {
-    html{
+    #html {
         overflow-y: scroll;
     }
 
+    .about-inform{
+        padding: 0;
+    }
+
+    .hero,
     .contact,
     .portfolio {
         background-color: #8e989c;
     }
+
+    .about {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    section {
+        overflow-y: visible;
+        height: auto;
+    }
+
+    .metrics-names {
+        overflow-y: hidden;
+    }
+
+    .about-person {
+        margin: 0 auto;
+    }
+
+    .about-inform__title {
+        display: none;
+    }
+
+    .about-inform {
+        width: auto;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .about-inform__link {
+        margin: 50px 0;
+    }
+
+    .contact-container,
+    .facts-container,
+    .portfolio-container,
+    .skills-container {
+        padding: 50px 0;
+    }
+
+}
+
+@media (max-width: 764px) {
+    .contact-content{
+        flex-direction: column-reverse;
+    }
+
+    .contact-content__item{
+        width: auto;
+        min-height: auto;
+        text-align: center;
+    }
+
+    .contact-content__item-part{
+        padding: 15px 10px;
+    }
+}
+
+@media (max-width: 465px) {
+    .portfolio-content__item{
+        margin: 10px 0;
+    }
+
+    .portfolio-content__item-inner{
+        width: 192px;
+        height: 135px;
+        margin: 0 auto;
+        padding: 15px;
+    }
+
+    .about-person{
+        width: calc(100% - 60px);
+        height: auto;
+    }
+
+    .about-person__img{
+        width: 100%;
+    }
+
+    .metrics-number {
+        transform: translate(0, 50%);
+    }
+
+    ._active .b_50 {
+        bottom: 55%;
+    }
+
+    ._active .b_60 {
+        bottom: 65%;
+    }
+
+    ._active .b_70 {
+        bottom: 75%;
+    }
+
+    ._active .b_80 {
+        bottom: 85%;
+    }
+
+    ._active .b_90 {
+        bottom: 95%;
+    }
+}
+
+@media (max-width: 382px) {
+
 }
 
 @media (max-height: 864px) {
@@ -17,6 +128,7 @@
     .skills-container {
         padding-top: calc(100vh / 12);
     }
+
     .nav {
         height: auto;
     }
@@ -32,7 +144,6 @@
         height: 35vh;
     }
 }
-
 
 
 /* TODO не работающие кнопки < 1024, не работающая анимация после кнопки */
