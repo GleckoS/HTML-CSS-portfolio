@@ -878,12 +878,14 @@ section {
 .contact-form__button {
     padding: 10px 0;
     background-color: transparent;
-    border: 1px solid #000000;
+    border: 1px solid #aaaaaa;
+    color: #aaaaaa;
     margin: 20px;
     transition: .3s linear;
 }
 
+/*
 .contact-form__button:hover {
     background-color: #000000;
     color: #FFFFFF;
-}
+}*/
