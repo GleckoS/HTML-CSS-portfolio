@@ -32,7 +32,7 @@ const addItems = (item) => {
                 <img alt="preview of site" class="portfolio-content__item-img" src="${item.imgSrc}"/>
             </div>
             <div class="portfolio-content__item-inform">
-                <h5 class="portfolio-content__item-title">${item.title}</h5>
+                <h3 class="portfolio-content__item-title">${item.title}</h3>
                 <p class="portfolio-content__item-text">${item.text}</p>
                 <a href="${item.link}" class="portfolio-content__item-link">VIEW</a>
             </div>
