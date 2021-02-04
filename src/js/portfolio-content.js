@@ -19,7 +19,14 @@ const portfolio = [
         title: 'porten-clock',
         text: 'Corporation website',
         type: 'homepage'
-    }
+    },
+	{
+		imgSrc: './src/img/aninstudiourody.png', /*Change photo*/
+		link: 'aninstudiourody.com',
+        title: 'An & IN Studio Urody',
+        text: 'Corporation website',
+        type: 'homepage'
+	}
 ]
 
 let container = document.getElementById("portfolio-content")
