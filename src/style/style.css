@@ -1,6 +1,9 @@
 html{
-    overflow: visible; /* костыль для portfolio content */
+    overflow: visible; 
 }
+
+/* костыль для portfolio content */
+
 #html {
     scroll-behavior: smooth;
     overflow-y: hidden;
