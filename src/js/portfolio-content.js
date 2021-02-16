@@ -21,8 +21,8 @@ const portfolio = [
         type: 'homepage'
     },
 	{
-		imgSrc: './src/img/aninstudiourody.png', /*Change photo*/
-		link: 'aninstudiourody.com',
+		imgSrc: './src/img/aninstudiourody.png',
+		link: 'http://aninstudiourody.com',
         title: 'An & IN Studio Urody',
         text: 'Corporation website',
         type: 'homepage'
