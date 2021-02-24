@@ -4,28 +4,28 @@ const portfolio = [
         link: './src/portfolio/it_company_2/it_company.html',
         title: 'It Company',
         text: 'Corporation website',
-        type: 'homepage'
+        type: 'homepages'
     },
     {
         imgSrc: './src/img/trans_light.html.webp',
         link: './src/portfolio/trans_light_3/trans_light.html',
         title: 'Trans-light',
         text: 'Corporation website',
-        type: 'homepage'
+        type: 'homepages'
     },
     {
         imgSrc: './src/img/porten_clock.html.webp',
         link: './src/portfolio/porten_clock_1/porten_clock.html',
         title: 'porten-clock',
         text: 'Corporation website',
-        type: 'homepage'
+        type: 'homepages'
     },
 	{
 		imgSrc: './src/img/aninstudiourody.png',
 		link: 'http://aninstudiourody.com',
         title: 'An & IN Studio Urody',
         text: 'Corporation website',
-        type: 'homepage'
+        type: 'homepages'
 	}
 ]
 
@@ -64,34 +64,12 @@ const initialContent = () => {
     })
 }
 
-const homepages = () => {
+const changeTab = (e) => {
     clearClasses()
-    document.getElementById('homepages').classList.add('_active')
+    e.classList.add('_active')
     container.innerHTML = '';
     portfolio.map(item => {
-        if (item.type === 'homepage') {
-            addItems(item)
-        }
-    })
-}
-
-const landings = () => {
-    clearClasses()
-    document.getElementById('landings').classList.add('_active')
-    container.innerHTML = '';
-    portfolio.map(item => {
-        if (item.type === 'landings') {
-            addItems(item)
-        }
-    })
-}
-
-const ecommerce = () => {
-    clearClasses()
-    document.getElementById('ecommerce').classList.add('_active')
-    container.innerHTML = '';
-    portfolio.map(item => {
-        if (item.type === 'ecommerce') {
+        if (item.type === e.id) {
             addItems(item)
         }
     })

@@ -134,10 +134,10 @@
                 Check out my latest works
             </p>
             <div class="portfolio-sort">
-                <button id="all" class="portfolio-sort__button _active" onclick="initialContent()">All works</button>
-                <button id="homepages" class="portfolio-sort__button" onclick="homepages()">Homepages</button>
-                <button id="landings" class="portfolio-sort__button" onclick="landings()">Landings</button>
-                <button id="ecommerce" class="portfolio-sort__button" onclick="ecommerce()">E-commerce</button>
+                <button id="all" class="portfolio-sort__button _active" onclick="initialContent(this)">All works</button>
+                <button id="homepages" class="portfolio-sort__button" onclick="changeTab(this)">Homepages</button>
+                <button id="landings" class="portfolio-sort__button" onclick="changeTab(this)">Landings</button>
+                <button id="ecommerce" class="portfolio-sort__button" onclick="changeTab(this)">E-commerce</button>
             </div>
             <div id="portfolio-content" class="portfolio-content">
                 <!-- Контент генерируется в js/portfolio-content.js -->
