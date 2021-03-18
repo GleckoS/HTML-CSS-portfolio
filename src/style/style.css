@@ -728,7 +728,7 @@ section {
 .facts-list__item-answer__text{
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-55%);
 }
 
 .facts-anim_1 {

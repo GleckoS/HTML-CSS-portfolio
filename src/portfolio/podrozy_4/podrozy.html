@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta name="viewport" content="maximum-scale=1, width=device-width">
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>Podroży</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-row _anim-items">
+            <div class="container row-container">
+                <div class="row-left">
+                    <div class="row-left__lock">
+                        <img class="row-left__lock-img" src="./images/icons/lock.png" alt="ikonka kłódki">
+                    </div>
+                    <div class="row-left__sign">
+                        <a class="row-left__sign-link_red" href="#">rejestracja</a>
+                        <span> / </span>
+                        <a class="row-left__sign-link" href="#">logowanie</a>
+                    </div>
+                    <div id="mobile-menu" class="row-left__mobile-menu" onclick="mobileNav()">
+
+                    </div>
+                </div>
+                <div class="row-right">
+                    <div class="row-right__item">
+                        <img class="row-right__item-img" src="./images/icons/phone.png" alt="ikonka telefonu" />
+                        <span><a class="row-right__item-link" href="tel:+48123456789">+48 123 456 789</a></span>
+                    </div>
+                    <div class="row-right__item">
+                        <img class="row-right__item-img" src="./images/icons/placeholder.png" alt="ikonka mapy" />
+                        <span>Kraków, Kochanowskiego 21 a</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-nav _anim-items _anim-no-hide">
+            <div class="container nav-container">
+                <div class="logo-container">
+                    <img class="logo" src="./images/logo.png" alt="logo firmy wycieciek tęcza">
+                </div>
+                <nav class="nav" id="nav">
+                    <ul class="nav-list">
+                        <li class="nav-list__item nav-line"></li>
+                        <li class="nav-list__item"><a class="nav-list__link" href="#">strona główna</a></li>
+                        <li class="nav-list__item"><a class="nav-list__link" href="#">oferta</a></li>
+                        <li class="nav-list__item money-char"><a class="nav-list__link" href="#">last minute</a>
+                        </li>
+                        <li class="nav-list__item percent-char"><a class="nav-list__link" href="#">promocje</a></li>
+                        <li class="nav-list__item"><a class="nav-list__link" href="#">aktualności</a></li>
+                        <li class="nav-list__item"><a class="nav-list__link" href="#">o nas</a></li>
+                        <li class="nav-list__item"><a class="nav-list__link" href="#">kontakt</a></li>
+                    </ul>
+                </nav>
+                <div class="social">
+                    <a class="social-link" href="#"><img src="./images/social/facebook.png" alt="ikonka facebook"></a>
+                    <a class="social-link" href="#"><img src="./images/social/snap.png" alt="ikonka snapchat"></a>
+                    <a class="social-link" href="#"><img src="./images/social/youtube.png" alt="ikonka youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="header-hero">
+            <form class="hero-content _anim-items _anim-no-hide">
+                <input class="hero-input" placeholder="Gdzie chcesz się udać...">
+                <button class="hero-button"><img src="./images/icons/search.png" alt="ikonka wyszukiwanie"></button>
+                <div class="header-hero__options">
+                    <img class="header-hero__options-icon" src="./images/icons/gear.png" alt="ikonka opcji zaawansowane">
+                    <span class="header-hero__options-text">wyszukiwanie zaawansowane</span>
+                </div>
+            </form>
+        </div>
+    </header>
+    <main>
+        <article class="trips">
+            <div class="container">
+                <div class="trips-inform">
+                    <p class="trips-inform__text _anim-items _anim-no-hide">NASZE TOPOWE</p>
+                    <h1 class="trips-inform__title _anim-items _anim-no-hide">WYCIECZKI</h2>
+                </div>
+                <div class="trips-content">
+                    <section class="trips-item _anim-items _anim-no-hide">
+                        <div class="trips-item__img-container">
+                            <a class="trips-link" href="#"></a>
+                            <img src="./images/offer/1.jpg" alt="zdjęcie wyciećki do Budapesztu" />
+                            <div class="trips-item__img-inform">
+                                <p class="trips-item__img-text">Europa</p>
+                                <h3 class="trips-item__img-title">Budapeszt</h3>
+                            </div>
+                        </div>
+                        <div class="promotion">PROMOCJA</div>
+                        <p class="trips-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ullamcorper auctor ligula, eget pulvinar urna sodales sed.</p>
+                        <div class="trips-item__button-container">
+                            <div>
+                                <p class="trips-item__button-text_1">DOSTĘPNE OD</p>
+                                <p class="trips-item__button-text_2">1900 PLN</p>
+                            </div>
+                            <div class="line"></div>
+                            <a class="trips-item__button-link" href="#">WIĘCEJ</a>
+                        </div>
+                    </section>
+                    <section class="trips-item _anim-items _anim-no-hide">
+                        <div class="trips-item__img-container">
+                            <a class="trips-link" href="#"></a>
+                            <img src="./images/offer/1.jpg" alt="zdjęcie wyciećki do Ameryki" />
+                            <div class="trips-item__img-inform">
+                                <p class="trips-item__img-text">Ameryka</p>
+                                <h3 class="trips-item__img-title">Chicago</h3>
+                            </div>
+                        </div>
+                        <p class="trips-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ullamcorper auctor ligula, eget pulvinar urna sodales sed.</p>
+                        <div class="trips-item__button-container">
+                            <div>
+                                <p class="trips-item__button-text_1">DOSTĘPNE OD</p>
+                                <p class="trips-item__button-text_2">1750 PLN</p>
+                            </div>
+                            <div class="line"></div>
+                            <a class="trips-item__button-link" href="#">WIĘCEJ</a>
+                        </div>
+                    </section>
+                    <section class="trips-item _anim-items _anim-no-hide">
+                        <div class="trips-item__img-container">
+                            <a class="trips-link" href="#"></a>
+                            <img src="./images/offer/1.jpg" alt="zdjęcie wyciećki do Berlinu" />
+                            <div class="trips-item__img-inform">
+                                <p class="trips-item__img-text">Europa</p>
+                                <h3 class="trips-item__img-title">Berlin</h3>
+                            </div>
+                        </div>
+                        <div class="promotion">PROMOCJA</div>
+                        <p class="trips-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ullamcorper auctor ligula, eget pulvinar urna sodales sed.</p>
+                        <div class="trips-item__button-container">
+                            <div>
+                                <p class="trips-item__button-text_1">DOSTĘPNE OD</p>
+                                <p class="trips-item__button-text_2">1100 PLN</p>
+                            </div>
+                            <div class="line"></div>
+                            <a class="trips-item__button-link" href="#">WIĘCEJ</a>
+                        </div>
+                    </section>
+                    <section class="trips-item _anim-items _anim-no-hide">
+                        <div class="trips-item__img-container">
+                            <a class="trips-link" href="#"></a>
+                            <img src="./images/offer/1.jpg" alt="zdjęcie wyciećki do Bruksela" />
+                            <div class="trips-item__img-inform">
+                                <p class="trips-item__img-text">Europa</p>
+                                <h3 class="trips-item__img-title">Bruksela</h3>
+                            </div>
+                        </div>
+                        <p class="trips-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ullamcorper auctor ligula, eget pulvinar urna sodales sed.</p>
+                        <div class="trips-item__button-container">
+                            <div>
+                                <p class="trips-item__button-text_1">DOSTĘPNE OD</p>
+                                <p class="trips-item__button-text_2">900 PLN</p>
+                            </div>
+                            <div class="line"></div>
+                            <a class="trips-item__button-link" href="#">WIĘCEJ</a>
+                        </div>
+                    </section>
+                    <section class="trips-item _anim-items _anim-no-hide">
+                        <div class="trips-item__img-container">
+                            <a class="trips-link" href="#"></a>
+                            <img src="./images/offer/1.jpg" alt="zdjęcie wyciećki do Wrocława" />
+                            <div class="trips-item__img-inform">
+                                <p class="trips-item__img-text">Europa</p>
+                                <h3 class="trips-item__img-title">Wrocław</h3>
+                            </div>
+                        </div>
+                        <div class="promotion">PROMOCJA</div>
+                        <p class="trips-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ullamcorper auctor ligula, eget pulvinar urna sodales sed.</p>
+                        <div class="trips-item__button-container">
+                            <div>
+                                <p class="trips-item__button-text_1">DOSTĘPNE OD</p>
+                                <p class="trips-item__button-text_2">2500 PLN</p>
+                            </div>
+                            <div class="line"></div>
+                            <a class="trips-item__button-link" href="#">WIĘCEJ</a>
+                        </div>
+                    </section>
+                    <section class="trips-item _anim-items _anim-no-hide">
+                        <div class="trips-item__img-container">
+                            <a class="trips-link" href="#"></a>
+                            <img src="./images/offer/1.jpg" alt="zdjęcie wyciećki do Bratysława" />
+                            <div class="trips-item__img-inform">
+                                <p class="trips-item__img-text">Europa</p>
+                                <h3 class="trips-item__img-title">Bratysława</h3>
+                            </div>
+                        </div>
+                        <p class="trips-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ullamcorper auctor ligula, eget pulvinar urna sodales sed.</p>
+                        <div class="trips-item__button-container">
+                            <div>
+                                <p class="trips-item__button-text_1">DOSTĘPNE OD</p>
+                                <p class="trips-item__button-text_2">1920 PLN</p>
+                            </div>
+                            <div class="line"></div>
+                            <a class="trips-item__button-link" href="#">WIĘCEJ</a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </article>
+        <article class="lastMinute">
+            <div class="container">
+                <div class="lastMinute-inform">
+                    <p class="lastMinute-inform__text _anim-items _anim-no-hide">WYCIECZKI</p>
+                    <h2 class="lastMinute-inform__title _anim-items _anim-no-hide">LAST MINUTE</h2>
+                </div>
+                <div class="lastMinute-content">
+                    <div class="lastMinute-item _anim-items _anim-no-hide">
+                        <div class="lastMinute-item__content">
+                            <div class="lastMinute-item__img-wrapper">
+                                <img src="./images/lastminute/1.jpg" alt="zdjęcie wyciećki do Egiptu">
+                                <p class="lastMinute-item__img-text">EGIPT</p>
+                                <h3 class="lastMinute-item__img-title">SHARM EL SHEIKH</h3>
+                            </div>
+                            <div class="lastMinute-item__inform-wrapper">
+                                <p class="lastMinute-item__inform-text">
+                                    Cras odio diam, interdum sed magna non, ornare congue ante. Ut vel metus augue. Etiam sed enim ege stas, ornare lorem vitae, ultricies mi. Fusce euposuere libero, eget tempor mi.
+                                </p>
+                                <div class="lastMinute-item__icons-container">
+                                    <div class="icons-flex">
+                                        <div class="lastMinute-item__icon-wrapper pr40">
+                                            <div class="lastMinute-item__icon-box">
+                                                <img class="lastMinute-item__icon" src="./images/lastminute/airStart.png" alt="ikonka samolta">
+                                            </div>
+                                            <div class="lastMinute-item__icon-description">
+                                                <p class="lastMinute-item__icon-text_grey">Wylot</p>
+                                                <p class="lastMinute-item__icon-text_white">Kraków, AirPort</p>
+                                            </div>
+                                        </div>
+                                        <div class="lastMinute-item__icon-wrapper">
+                                            <div class="lastMinute-item__icon-box">
+                                                <img class="lastMinute-item__icon" src="./images/lastminute/aireEnd.png" alt="ikonka samolta">
+                                            </div>
+                                            <div class="lastMinute-item__icon-description">
+                                                <p class="lastMinute-item__icon-text_grey">Przylot</p>
+                                                <p class="lastMinute-item__icon-text_white">Egypt, Sharm</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="icons-flex">
+                                        <div class="lastMinute-item__icon-wrapper pr40">
+                                            <div class="lastMinute-item__icon-box">
+                                                <img class="lastMinute-item__icon" src="./images/lastminute/star.png" alt="ikonka gwiazdki">
+                                            </div>
+                                            <div class="lastMinute-item__icon-description">
+                                                <p class="lastMinute-item__icon-text_grey">Ocena</p>
+                                                <p class="lastMinute-item__icon-text_white">8,5 / 10</p>
+                                            </div>
+                                        </div>
+                                        <div class="lastMinute-item__icon-wrapper">
+                                            <div class="lastMinute-item__icon-box">
+                                                <img class="lastMinute-item__icon" src="./images/lastminute/bed.png" alt="ikonka łózka">
+                                            </div>
+                                            <div class="lastMinute-item__icon-description">
+                                                <p class="lastMinute-item__icon-text_grey">Hotel</p>
+                                                <p class="lastMinute-item__icon-text_white">Egypt, Sharm</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lastMinute-item__button-container">
+                                    <div>
+                                        <p class="lastMinute-item__button-text_1">DOSTĘPNE OD</p>
+                                        <p class="lastMinute-item__button-text_2">2500 PLN</p>
+                                    </div>
+                                    <div class="line"></div>
+                                    <a class="lastMinute-item__button-link" href="#">WIĘCEJ</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lastMinute-item _anim-items _anim-no-hide">
+                        <div class="lastMinute-item__content">
+                            <div class="lastMinute-item__img-wrapper">
+                                <img src="./images/lastminute/1.jpg" alt="zdjęcie wyciećki do Egiptu">
+                                <p class="lastMinute-item__img-text">EGIPT</p>
+                                <h3 class="lastMinute-item__img-title">SHARM EL SHEIKH</h3>
+                            </div>
+                            <div class="lastMinute-item__inform-wrapper">
+                                <p class="lastMinute-item__inform-text">
+                                    Cras odio diam, interdum sed magna non, ornare congue ante. Ut vel metus augue. Etiam sed enim ege stas, ornare lorem vitae, ultricies mi. Fusce euposuere libero, eget tempor mi.
+                                </p>
+                                <div class="lastMinute-item__icons-container">
+                                    <div class="icons-flex">
+                                        <div class="lastMinute-item__icon-wrapper pr40">
+                                            <div class="lastMinute-item__icon-box">
+                                                <img class="lastMinute-item__icon" src="./images/lastminute/airStart.png" alt="ikonka samolta">
+                                            </div>
+                                            <div class="lastMinute-item__icon-description">
+                                                <p class="lastMinute-item__icon-text_grey">Wylot</p>
+                                                <p class="lastMinute-item__icon-text_white">Kraków, AirPort</p>
+                                            </div>
+                                        </div>
+                                        <div class="lastMinute-item__icon-wrapper">
+                                            <div class="lastMinute-item__icon-box">
+                                                <img class="lastMinute-item__icon" src="./images/lastminute/aireEnd.png" alt="ikonka samolta">
+                                            </div>
+                                            <div class="lastMinute-item__icon-description">
+                                                <p class="lastMinute-item__icon-text_grey">Przylot</p>
+                                                <p class="lastMinute-item__icon-text_white">Egypt, Sharm</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="icons-flex">
+                                        <div class="lastMinute-item__icon-wrapper pr40">
+                                            <div class="lastMinute-item__icon-box">
+                                                <img class="lastMinute-item__icon" src="./images/lastminute/star.png" alt="ikonka gwiazdki">
+                                            </div>
+                                            <div class="lastMinute-item__icon-description">
+                                                <p class="lastMinute-item__icon-text_grey">Ocena</p>
+                                                <p class="lastMinute-item__icon-text_white">8,5 / 10</p>
+                                            </div>
+                                        </div>
+                                        <div class="lastMinute-item__icon-wrapper">
+                                            <div class="lastMinute-item__icon-box">
+                                                <img class="lastMinute-item__icon" src="./images/lastminute/bed.png" alt="ikonka łózka">
+                                            </div>
+                                            <div class="lastMinute-item__icon-description">
+                                                <p class="lastMinute-item__icon-text_grey">Hotel</p>
+                                                <p class="lastMinute-item__icon-text_white">Egypt, Sharm</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lastMinute-item__button-container">
+                                    <div>
+                                        <p class="lastMinute-item__button-text_1">DOSTĘPNE OD</p>
+                                        <p class="lastMinute-item__button-text_2">2500 PLN</p>
+                                    </div>
+                                    <div class="line"></div>
+                                    <a class="lastMinute-item__button-link" href="#">WIĘCEJ</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer class="footer">
+        <div class="footer-inform">
+            <P class="footer-inform__content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et elit bibendum,ornare est eu, mollis libero. Nunc risus sapien, sodales nec nisl sit amet, pellentesque porttitor ex.
+            </P>
+        </div>
+        <div class="footer-copyright">
+            <p>
+                Projekt strona 2017 (c) / Wszystkie prawa zastrzeżone
+            </p>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

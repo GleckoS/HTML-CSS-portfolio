@@ -18,15 +18,22 @@ const portfolio = [
         link: './src/portfolio/porten_clock_1/porten_clock.html',
         title: 'porten-clock',
         text: 'Corporation website',
-        type: 'homepages'
+        type: 'landings'
     },
-	{
-		imgSrc: './src/img/aninstudiourody.png',
-		link: 'http://aninstudiourody.com',
+    {
+        imgSrc: './src/img/aninstudiourody.png',
+        link: 'http://aninstudiourody.com',
         title: 'An & IN Studio Urody',
         text: 'Corporation website',
         type: 'homepages'
-	}
+    },
+    {
+        imgSrc: './src/img/podrozy.png',
+        link: './src/portfolio/podrozy_4/podrozy.html',
+        title: 'Biuro podroży',
+        text: 'Corporation website',
+        type: 'ecommerce'
+    }
 ]
 
 let container = document.getElementById("portfolio-content")
