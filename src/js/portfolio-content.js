@@ -18,7 +18,7 @@ const portfolio = [
         link: './src/portfolio/porten_clock_1/porten_clock.html',
         title: 'porten-clock',
         text: 'Corporation website',
-        type: 'landings'
+        type: 'homepages'
     },
     {
         imgSrc: './src/img/aninstudiourody.png',
@@ -33,6 +33,13 @@ const portfolio = [
         title: 'Biuro podroży',
         text: 'Corporation website',
         type: 'ecommerce'
+    },
+    {
+        imgSrc: './src/img/teremochek.png',
+        link: 'https://teremochek.club',
+        title: 'Child haircut',
+        text: 'Corporation website',
+        type: 'landings'
     }
 ]
 
